@@ -19,7 +19,6 @@ const Timeline = ({ events, moveCharacterToTimeline, assignments }) => {
       navigate(`/test`);
     },
   }));
-  
 
   return (
     <div className="w-full my-8">
@@ -47,8 +46,18 @@ const Timeline = ({ events, moveCharacterToTimeline, assignments }) => {
       {/* Character Assignments */}
       <div className="mt-8">
         {assignments[selectedEvent.page]?.map((character, index) => (
-          <div key={index} className="flex items-center space-x-4" onClick={() => navigate(`/character-perspective/${character.name}/${selectedEvent.page}`)}>
-            <div className="p-2 bg-blue-100 rounded-lg shadow-md">{character.name}</div>
+          <div
+            key={index}
+            className="flex items-center space-x-4"
+            onClick={() =>
+              navigate(
+                `/character-perspective/${character.name}/${selectedEvent.page}`
+              )
+            }
+          >
+            <div className="p-2 bg-blue-100 rounded-lg shadow-md">
+              {character.name}
+            </div>
           </div>
         ))}
       </div>
