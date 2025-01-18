@@ -1,56 +1,97 @@
 import React from "react";
 import { Chrono } from "react-chrono";
+import { useDrop } from "react-dnd";
+import { useNavigate } from "react-router-dom";
 
-const Timeline2 = () => {
-  // Your dummy data
-  const dummydata = [
-    {
-      title: "May 1940",
-      cardTitle: "Dunkirk",
-      cardDetailedText:
-        "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
-    },
-    {
-      title: "25 July 1940",
-      cardTitle: "The Battle of Britain",
-      cardDetailedText: "RAF Spitfire pilots scramble for their planes",
-    },
-    {
-      title: "7 December 1941",
-      cardTitle: "Pearl Harbor Attack",
-      cardDetailedText: "Japanese aircraft attack Pearl Harbor.",
-    },
-    {
-      title: "6 June 1944",
-      cardTitle: "D-Day: The Normandy Invasion",
-      cardDetailedText: "Allied forces storm the beaches of Normandy.",
-    },
-    {
-      title: "7 May 1945",
-      cardTitle: "Victory in Europe (VE) Day",
-      cardDetailedText: "Nazi Germany surrenders to the Allies.",
-    },
-  ];
+const Timeline2 = ({ timeline, moveCharacterToTimeline, assignments }) => {
+  const navigate = useNavigate();
+
+  const chronoItems = timeline.map((event) => ({
+    title: `Page ${event.page}`,
+    cardTitle: event.title || `Event ${event.page}`,
+    cardDetailedText: event.description,
+    cardSubtitle: assignments[event.page]?.map((char) => char.name).join(", "),
+  }));
+
+  const DroppableTimelineWrapper = ({ children }) => {
+    const [{ isOver }, drop] = useDrop(() => ({
+      accept: "CHARACTER",
+      drop: (item, monitor) => {
+        const clientOffset = monitor.getClientOffset();
+        const eventIndex = Math.floor(
+          (clientOffset.y / window.innerHeight) * timeline.length
+        );
+        const event = timeline[eventIndex];
+
+        if (event) {
+          moveCharacterToTimeline(item.character, event.page);
+          navigate(
+            `/character-perspective/${item.character.name}/${event.page}`
+          );
+        }
+      },
+      collect: (monitor) => ({
+        isOver: monitor.isOver(),
+      }),
+    }));
+
+    return (
+      <div ref={drop} className={`w-full h-full ${isOver ? "bg-gray-50" : ""}`}>
+        {children}
+      </div>
+    );
+  };
+
+  const handleCardClick = (index) => {
+    const event = timeline[index];
+    if (assignments[event.page]?.length > 0) {
+      const character = assignments[event.page][0];
+      navigate(`/character-perspective/${character.name}/${event.page}`);
+    }
+  };
 
   return (
-    <div className="w-full h-full">
-      <Chrono
-        items={dummydata}
-        mode="VERTICAL"
-        cardHeight={200} // Specify card height
-        hideControls={true} // Hide navigation controls
-        theme={{
-          primary: "#4F46E5", // Customize the color scheme
-          secondary: "bg-blue-600",
-          cardBgColor: "white",
-          cardForeColor: "black",
-          titleColor: "black",
-        }}
-        enableBreakPoint // Enables responsive behavior
-        showAllCardsHorizontal={false} // Keep cards vertical
-        flipLayout={false} // Keep timeline on the left
-        useReadMore={false} // Disable read more button
-      />
+    <div className="h-full flex flex-col">
+      <div className="flex-1 overflow-hidden">
+        <div
+          className="h-full overflow-y-auto"
+          style={{ maxHeight: "calc(100vh - 200px)" }}
+        >
+          <DroppableTimelineWrapper>
+            <Chrono
+              items={chronoItems}
+              mode="VERTICAL"
+              cardHeight={150}
+              hideControls={true}
+              theme={{
+                primary: "#4F46E5",
+                secondary: "#1E40AF",
+                cardBgColor: "white",
+                cardForeColor: "black",
+                titleColor: "black",
+              }}
+              enableBreakPoint
+              showAllCardsHorizontal={false}
+              flipLayout={false}
+              useReadMore={false}
+              onCardClick={(index) => handleCardClick(index)}
+            >
+              {chronoItems.map((item, index) => (
+                <div key={index} className="p-4">
+                  {assignments[timeline[index].page]?.map((char) => (
+                    <span
+                      key={char.name}
+                      className="px-2 py-1 bg-blue-600 text-white rounded-full text-sm mr-2"
+                    >
+                      {char.name}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </Chrono>
+          </DroppableTimelineWrapper>
+        </div>
+      </div>
     </div>
   );
 };
