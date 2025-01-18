@@ -14,8 +14,9 @@ export default function Input() {
 
   const sampleData = {
     timeline: [
-      { page: 1, title: "Event 1", description: "This is the first event." },
-      { page: 2, title: "Event 2", description: "This is the second event." },
+      { page: 1, title: null},
+      { page: 2, title: "Event 2"},
+      { page: 3, title: null},
     ],
     characters: [
       { name: "Person1", description: "He did this" },
