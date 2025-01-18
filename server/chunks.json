@@ -1,0 +1,353 @@
+[
+    {
+        "chunk_num": 1,
+        "page_nums": [
+            1,
+            2,
+            3
+        ],
+        "text": "Folger Shakespeare Library http://www.folgerdigitaltexts.org Front Matter From the Director of the Folger Shakespeare Library Textual Introduction Synopsis Characters in the Play ACT 1 Scene 1 Scene 2 Scene 3 Scene 4 Scene 5 ACT 2 Scene 1 Scene 2 ACT 3 Scene 1 Scene 2 Scene 3 Scene 4 ACT 4 Scene 1 Scene 2 Scene 3 Scene 4 Scene 5 Scene 6 Scene 7 ACT 5 Scene 1 Scene 2 Contents Michael Witmore Director, Folger Shakespeare Library It is hard to imagine a world without Shakespeare. Since their composition four hundred years ago, Shakespeare\u2019s plays and poems have traveled the globe, inviting those who see and read his works to make them their own. Readers of the New Folger Editions are part of this ongoing process of \u201ctaking up Shakespeare,\u201d finding our own thoughts and feelings in language that strikes us as old or unusual and, for that very reason, new. We still struggle to keep up with a writer who could think a mile a minute, whose words paint pictures that shift like clouds. These expertly edited texts are presented to the public as a resource for study, artistic adaptation, and enjoyment. By making the classic texts of the New Folger Editions available in electronic form as Folger Digital Texts, we place a trusted resource in the hands of anyone who wants them. The New Folger Editions of Shakespeare\u2019s plays, which are the basis for the texts realized here in digital form, are special because of their origin."
+    },
+    {
+        "chunk_num": 2,
+        "page_nums": [
+            3,
+            4
+        ],
+        "text": "The New Folger Editions of Shakespeare\u2019s plays, which are the basis for the texts realized here in digital form, are special because of their origin. The Folger Shakespeare Library in Washington, DC, is the single greatest documentary source of Shakespeare\u2019s works. An unparalleled collection of early modern books, manuscripts, and artwork connected to Shakespeare, the Folger\u2019s holdings have been consulted extensively in the preparation of these texts. The Editions also reflect the expertise gained through the regular performance of Shakespeare\u2019s works in the Folger\u2019s Elizabethan Theater. I want to express my deep thanks to editors Barbara Mowat and Paul Werstine for creating these indispensable editions of Shakespeare\u2019s works, which incorporate the best of textual scholarship with a richness of commentary that is both inspired and engaging. Readers who want to know more about Shakespeare and his plays can follow the paths these distinguished scholars have tread by visiting the Folger either in-person or online, where a range of physical and digital resources exists to supplement the material in these texts. I commend to you these words, and hope that they inspire. From the Director of the Folger Shakespeare Library Until now, with the release of the Folger Digital Texts, readers in search of a free online text of Shakespeare\u2019s plays had to be content primarily with using the Moby\u2122 Text, which reproduces a late- nineteenth century version of the plays. What is the difference? Many ordinary readers assume that there is a single text for the plays: what Shakespeare wrote."
+    },
+    {
+        "chunk_num": 3,
+        "page_nums": [
+            4
+        ],
+        "text": "century version of the plays. What is the difference? Many ordinary readers assume that there is a single text for the plays: what Shakespeare wrote. But Shakespeare\u2019s plays were not published the way modern novels or plays are published today: as a single, authoritative text. In some cases, the plays have come down to us in multiple published versions, represented by various Quartos (Qq) and by the great collection put together by his colleagues in 1623, called the First Folio (F). There are, for example, three very different versions of Hamlet, two of King Lear, Henry V, Romeo and Juliet, and others. Editors choose which version to use as their base text, and then amend that text with words, lines or speech prefixes from the other versions that, in their judgment, make for a better or more accurate text. Other editorial decisions involve choices about whether an unfamiliar word could be understood in light of other writings of the period or whether it should be changed; decisions about words that made it into Shakespeare\u2019s text by accident through four hundred years of printings and misprinting; and even decisions based on cultural preference and taste. When the Moby\u2122 Text was created, for example, it was deemed \u201cimproper\u201d and \u201cindecent\u201d for Miranda to chastise Caliban for having attempted to rape her. (See The Tempest, 1.2: \u201cAbhorred slave,/Which any print of goodness wilt not take,/Being capable of all ill! I pitied thee\u2026\u201d). All Shakespeare editors at the time took the speech away from"
+    },
+    {
+        "chunk_num": 4,
+        "page_nums": [
+            4,
+            5,
+            6
+        ],
+        "text": "any print of goodness wilt not take,/Being capable of all ill! I pitied thee\u2026\u201d). All Shakespeare editors at the time took the speech away from her and gave it to her father, Prospero. The editors of the Moby\u2122 Shakespeare produced their text long before scholars fully understood the proper grounds on which to make the thousands of decisions that Shakespeare editors face. The Folger Library Shakespeare Editions, on which the Folger Digital Texts depend, make this editorial process as nearly transparent as is possible, in contrast to older texts, like the Moby\u2122, which hide editorial interventions. The reader of the Folger Shakespeare knows where the text has been altered because editorial interventions are signaled by square brackets (for example, from Othello: \u201c If she in Textual Introduction By Barbara Mowat and Paul Werstine chains of magic were not bound, \u201d), half-square brackets (for example, from Henry V: \u201cWith blood and sword and fire to win your right,\u201d), or angle brackets (for example, from Hamlet: \u201cO farewell, honest soldier. Who hath relieved/you?\u201d). At any point in the text, you can hover your cursor over a bracket for more information. Because the Folger Digital Texts are edited in accord with twenty-first century knowledge about Shakespeare\u2019s texts, the Folger here provides them to readers, scholars, teachers, actors, directors, and students, free of charge, confident of their quality as texts of the plays and pleased to be able to make this contribution to the study and enjoyment of Shakespeare. Events before the start of"
+    },
+    {
+        "chunk_num": 5,
+        "page_nums": [
+            5,
+            6,
+            7
+        ],
+        "text": "texts of the plays and pleased to be able to make this contribution to the study and enjoyment of Shakespeare. Events before the start of Hamlet set the stage for tragedy. When the king of Denmark, Prince Hamlet\u2019s father, suddenly dies, Hamlet\u2019s mother, Gertrude, marries his uncle Claudius, who becomes the new king. A spirit who claims to be the ghost of Hamlet\u2019s father describes his murder at the hands of Claudius and demands that Hamlet avenge the killing. When the councilor Polonius learns from his daughter, Ophelia, that Hamlet has visited her in an apparently distracted state, Polonius attributes the prince\u2019s condition to lovesickness, and he sets a trap for Hamlet using Ophelia as bait. To confirm Claudius\u2019s guilt, Hamlet arranges for a play that mimics the murder; Claudius\u2019s reaction is that of a guilty man. Hamlet, now free to act, mistakenly kills Polonius, thinking he is Claudius. Claudius sends Hamlet away as part of a deadly plot. After Polonius\u2019s death, Ophelia goes mad and later drowns. Hamlet, who has returned safely to confront the king, agrees to a fencing match with Ophelia\u2019s brother, Laertes, who secretly poisons his own rapier. At the match, Claudius prepares poisoned wine for Hamlet, which Gertrude unknowingly drinks; as she dies, she accuses Claudius, whom Hamlet kills. Then first Laertes and then Hamlet die, both victims of Laertes\u2019 rapier. Synopsis THE GHOST HAMLET, Prince of Denmark, son of the late King Hamlet and Queen Gertrude QUEEN GERTRUDE, widow of King Hamlet, now married"
+    },
+    {
+        "chunk_num": 6,
+        "page_nums": [
+            6,
+            7,
+            8
+        ],
+        "text": "rapier. Synopsis THE GHOST HAMLET, Prince of Denmark, son of the late King Hamlet and Queen Gertrude QUEEN GERTRUDE, widow of King Hamlet, now married to Claudius KING CLAUDIUS, brother to the late King Hamlet OPHELIA LAERTES, her brother POLONIUS, father of Ophelia and Laertes, councillor to King Claudius REYNALDO, servant to Polonius HORATIO, Hamlet\u2019s friend and confidant FORTINBRAS, Prince of Norway A Captain in Fortinbras\u2019s army Ambassadors to Denmark from England Players who take the roles of Prologue, Player King, Player Queen, and Lucianus in The Murder of Gonzago Two Messengers Sailors Gravedigger Gravedigger\u2019s companion Doctor of Divinity Attendants, Lords, Guards, Musicians, Laertes\u2019s Followers, Soldiers, Officers Characters in the Play courtiers at the Danish court VOLTEMAND CORNELIUS ROSENCRANTZ GUILDENSTERN OSRIC Gentlemen A Lord Danish soldiers FRANCISCO BARNARDO MARCELLUS BARNARDO FRANCISCO BARNARDO FRANCISCO BARNARDO FRANCISCO BARNARDO FRANCISCO BARNARDO FRANCISCO BARNARDO FRANCISCO HORATIO Enter Barnardo and Francisco, two sentinels. Who\u2019s there? Nay, answer me. Stand and unfold yourself. Long live the King! Barnardo. He. You come most carefully upon your hour. \u2019Tis now struck twelve. Get thee to bed, Francisco. For this relief much thanks. \u2019Tis bitter cold, And I am sick at heart. Have you had quiet guard? Not a mouse stirring. Well, good night. If you do meet Horatio and Marcellus, The rivals of my watch, bid them make haste. Enter Horatio and Marcellus. I think I hear them.\u2014Stand ho! Who is there? Friends to this ground. 7 ACT 1 Scene 1 FTLN 0001 FTLN 0002 FTLN 0003 FTLN"
+    },
+    {
+        "chunk_num": 7,
+        "page_nums": [
+            8,
+            9
+        ],
+        "text": "I think I hear them.\u2014Stand ho! Who is there? Friends to this ground. 7 ACT 1 Scene 1 FTLN 0001 FTLN 0002 FTLN 0003 FTLN 0004 FTLN 0005 5 FTLN 0006 FTLN 0007 FTLN 0008 FTLN 0009 FTLN 0010 10 FTLN 0011 FTLN 0012 FTLN 0013 FTLN 0014 FTLN 0015 15 FTLN 0016 9 Hamlet ACT 1. SC. 1 FRANCISCO MARCELLUS FRANCISCO Francisco exits. MARCELLUS BARNARDO HORATIO BARNARDO HORATIO BARNARDO MARCELLUS HORATIO BARNARDO HORATIO BARNARDO MARCELLUS And liegemen to the Dane. Give you good night. O farewell, honest soldier. Who hath relieved you? Barnardo hath my place. Give you good night. Holla, Barnardo. Say, what, is Horatio there? A piece of him. Welcome, Horatio.\u2014Welcome, good Marcellus. What, has this thing appeared again tonight? I have seen nothing. Horatio says \u2019tis but our fantasy And will not let belief take hold of him Touching this dreaded sight twice seen of us. Therefore I have entreated him along With us to watch the minutes of this night, That, if again this apparition come, He may approve our eyes and speak to it. Tush, tush, \u2019twill not appear. Sit down awhile, And let us once again assail your ears, That are so fortified against our story, What we have two nights seen. Well, sit we down, And let us hear Barnardo speak of this. Last night of all, When yond same star that\u2019s westward from the pole Had made his course t\u2019 illume that part of heaven Where now it burns, Marcellus and"
+    },
+    {
+        "chunk_num": 8,
+        "page_nums": [
+            9,
+            10
+        ],
+        "text": "When yond same star that\u2019s westward from the pole Had made his course t\u2019 illume that part of heaven Where now it burns, Marcellus and myself, The bell then beating one\u2014 FTLN 0017 FTLN 0018 FTLN 0019 FTLN 0020 20 FTLN 0021 FTLN 0022 FTLN 0023 FTLN 0024 FTLN 0025 25 FTLN 0026 FTLN 0027 FTLN 0028 FTLN 0029 FTLN 0030 30 FTLN 0031 FTLN 0032 FTLN 0033 FTLN 0034 FTLN 0035 35 FTLN 0036 FTLN 0037 FTLN 0038 FTLN 0039 FTLN 0040 40 FTLN 0041 FTLN 0042 FTLN 0043 FTLN 0044 FTLN 0045 45 FTLN 0046 11 Hamlet ACT 1. SC. 1 MARCELLUS BARNARDO MARCELLUS BARNARDO HORATIO BARNARDO MARCELLUS HORATIO MARCELLUS BARNARDO HORATIO Ghost exits. MARCELLUS BARNARDO HORATIO Enter Ghost. Peace, break thee off! Look where it comes again. In the same figure like the King that\u2019s dead. , to Horatio Thou art a scholar. Speak to it, Horatio. Looks he not like the King? Mark it, Horatio. Most like. It harrows me with fear and wonder. It would be spoke to. Speak to it, Horatio. What art thou that usurp\u2019st this time of night, Together with that fair and warlike form In which the majesty of buried Denmark Did sometimes march? By heaven, I charge thee, speak. It is offended. See, it stalks away. Stay! speak! speak! I charge thee, speak! \u2019Tis gone and will not answer. How now, Horatio, you tremble and look pale. Is not this something more than fantasy? What think you on \u2019t? Before"
+    },
+    {
+        "chunk_num": 9,
+        "page_nums": [
+            10,
+            11
+        ],
+        "text": "and will not answer. How now, Horatio, you tremble and look pale. Is not this something more than fantasy? What think you on \u2019t? Before my God, I might not this believe Without the sensible and true avouch Of mine own eyes. FTLN 0047 FTLN 0048 FTLN 0049 FTLN 0050 50 FTLN 0051 FTLN 0052 FTLN 0053 FTLN 0054 FTLN 0055 55 FTLN 0056 FTLN 0057 FTLN 0058 FTLN 0059 FTLN 0060 60 FTLN 0061 FTLN 0062 FTLN 0063 FTLN 0064 FTLN 0065 65 FTLN 0066 FTLN 0067 FTLN 0068 13 Hamlet ACT 1. SC. 1 HORATIO MARCELLUS HORATIO MARCELLUS HORATIO MARCELLUS Is it not like the King? As thou art to thyself. Such was the very armor he had on When he the ambitious Norway combated. So frowned he once when, in an angry parle, He smote the sledded Polacks on the ice. \u2019Tis strange. Thus twice before, and jump at this dead hour, With martial stalk hath he gone by our watch. In what particular thought to work I know not, But in the gross and scope of mine opinion This bodes some strange eruption to our state. Good now, sit down, and tell me, he that knows, Why this same strict and most observant watch So nightly toils the subject of the land, And why such daily cast of brazen cannon And foreign mart for implements of war, Why such impress of shipwrights, whose sore task Does not divide the Sunday from the week. What might be"
+    },
+    {
+        "chunk_num": 10,
+        "page_nums": [
+            11,
+            12
+        ],
+        "text": "foreign mart for implements of war, Why such impress of shipwrights, whose sore task Does not divide the Sunday from the week. What might be toward that this sweaty haste Doth make the night joint laborer with the day? Who is \u2019t that can inform me? That can I. At least the whisper goes so: our last king, Whose image even but now appeared to us, Was, as you know, by Fortinbras of Norway, Thereto pricked on by a most emulate pride, Dared to the combat; in which our valiant Hamlet (For so this side of our known world esteemed him) Did slay this Fortinbras, who by a sealed compact, Well ratified by law and heraldry, Did forfeit, with his life, all those his lands Which he stood seized of, to the conqueror. FTLN 0069 FTLN 0070 70 FTLN 0071 FTLN 0072 FTLN 0073 FTLN 0074 FTLN 0075 75 FTLN 0076 FTLN 0077 FTLN 0078 FTLN 0079 FTLN 0080 80 FTLN 0081 FTLN 0082 FTLN 0083 FTLN 0084 FTLN 0085 85 FTLN 0086 FTLN 0087 FTLN 0088 FTLN 0089 FTLN 0090 90 FTLN 0091 FTLN 0092 FTLN 0093 FTLN 0094 FTLN 0095 95 FTLN 0096 FTLN 0097 FTLN 0098 FTLN 0099 FTLN 0100 100 FTLN 0101 15 Hamlet ACT 1. SC. 1 BARNARDO HORATIO Against the which a moiety competent Was gag\u00e8d by our king, which had returned To the inheritance of Fortinbras Had he been vanquisher, as, by the same comart And carriage of the article designed, His fell"
+    },
+    {
+        "chunk_num": 11,
+        "page_nums": [
+            12
+        ],
+        "text": "which had returned To the inheritance of Fortinbras Had he been vanquisher, as, by the same comart And carriage of the article designed, His fell to Hamlet. Now, sir, young Fortinbras, Of unimprov\u00e8d mettle hot and full, Hath in the skirts of Norway here and there Sharked up a list of lawless resolutes For food and diet to some enterprise That hath a stomach in \u2019t; which is no other (As it doth well appear unto our state) But to recover of us, by strong hand And terms compulsatory, those foresaid lands So by his father lost. And this, I take it, Is the main motive of our preparations, The source of this our watch, and the chief head Of this posthaste and rummage in the land. I think it be no other but e\u2019en so. Well may it sort that this portentous figure Comes arm\u00e8d through our watch so like the king That was and is the question of these wars. A mote it is to trouble the mind\u2019s eye. In the most high and palmy state of Rome, A little ere the mightiest Julius fell, The graves stood tenantless, and the sheeted dead Did squeak and gibber in the Roman streets; As stars with trains of fire and dews of blood, Disasters in the sun; and the moist star, Upon whose influence Neptune\u2019s empire stands, Was sick almost to doomsday with eclipse. And even the like precurse of feared events, As harbingers preceding still the fates And prologue"
+    },
+    {
+        "chunk_num": 12,
+        "page_nums": [
+            12,
+            13
+        ],
+        "text": "empire stands, Was sick almost to doomsday with eclipse. And even the like precurse of feared events, As harbingers preceding still the fates And prologue to the omen coming on, FTLN 0102 FTLN 0103 FTLN 0104 FTLN 0105 105 FTLN 0106 FTLN 0107 FTLN 0108 FTLN 0109 FTLN 0110 110 FTLN 0111 FTLN 0112 FTLN 0113 FTLN 0114 FTLN 0115 115 FTLN 0116 FTLN 0117 FTLN 0118 FTLN 0119 FTLN 0120 120 FTLN 0121 FTLN 0122 FTLN 0123 FTLN 0124 FTLN 0125 125 FTLN 0126 FTLN 0127 FTLN 0128 FTLN 0129 FTLN 0130 130 FTLN 0131 FTLN 0132 FTLN 0133 FTLN 0134 FTLN 0135 135 17 Hamlet ACT 1. SC. 1 It spreads his arms. The cock crows. MARCELLUS HORATIO BARNARDO HORATIO Ghost exits. MARCELLUS BARNARDO HORATIO Have heaven and Earth together demonstrated Unto our climatures and countrymen. Enter Ghost. But soft, behold! Lo, where it comes again! I\u2019ll cross it though it blast me.\u2014Stay, illusion! If thou hast any sound or use of voice, Speak to me. If there be any good thing to be done That may to thee do ease and grace to me, Speak to me. If thou art privy to thy country\u2019s fate, Which happily foreknowing may avoid, O, speak! Or if thou hast uphoarded in thy life Extorted treasure in the womb of earth, For which, they say, you spirits oft walk in death, Speak of it. Stay and speak!\u2014Stop it, Marcellus. Shall I strike it with my partisan? Do, if it will not"
+    },
+    {
+        "chunk_num": 13,
+        "page_nums": [
+            13,
+            14
+        ],
+        "text": "spirits oft walk in death, Speak of it. Stay and speak!\u2014Stop it, Marcellus. Shall I strike it with my partisan? Do, if it will not stand. \u2019Tis here. \u2019Tis here. \u2019Tis gone. We do it wrong, being so majestical, To offer it the show of violence, For it is as the air, invulnerable, And our vain blows malicious mockery. It was about to speak when the cock crew. And then it started like a guilty thing Upon a fearful summons. I have heard FTLN 0136 FTLN 0137 FTLN 0138 FTLN 0139 FTLN 0140 140 FTLN 0141 FTLN 0142 FTLN 0143 FTLN 0144 FTLN 0145 145 FTLN 0146 FTLN 0147 FTLN 0148 FTLN 0149 FTLN 0150 150 FTLN 0151 FTLN 0152 FTLN 0153 FTLN 0154 FTLN 0155 155 FTLN 0156 FTLN 0157 FTLN 0158 FTLN 0159 FTLN 0160 160 FTLN 0161 FTLN 0162 FTLN 0163 FTLN 0164 19 Hamlet ACT 1. SC. 1 MARCELLUS HORATIO MARCELLUS They exit. The cock, that is the trumpet to the morn, Doth with his lofty and shrill-sounding throat Awake the god of day, and at his warning, Whether in sea or fire, in earth or air, Th\u2019 extravagant and erring spirit hies To his confine, and of the truth herein This present object made probation. It faded on the crowing of the cock. Some say that ever \u2019gainst that season comes Wherein our Savior\u2019s birth is celebrated, This bird of dawning singeth all night long; And then, they say, no spirit dare stir abroad, The"
+    },
+    {
+        "chunk_num": 14,
+        "page_nums": [
+            14,
+            15
+        ],
+        "text": "comes Wherein our Savior\u2019s birth is celebrated, This bird of dawning singeth all night long; And then, they say, no spirit dare stir abroad, The nights are wholesome; then no planets strike, No fairy takes, nor witch hath power to charm, So hallowed and so gracious is that time. So have I heard and do in part believe it. But look, the morn in russet mantle clad Walks o\u2019er the dew of yon high eastward hill. Break we our watch up, and by my advice Let us impart what we have seen tonight Unto young Hamlet; for, upon my life, This spirit, dumb to us, will speak to him. Do you consent we shall acquaint him with it As needful in our loves, fitting our duty? Let\u2019s do \u2019t, I pray, and I this morning know Where we shall find him most convenient. FTLN 0165 165 FTLN 0166 FTLN 0167 FTLN 0168 FTLN 0169 FTLN 0170 170 FTLN 0171 FTLN 0172 FTLN 0173 FTLN 0174 FTLN 0175 175 FTLN 0176 FTLN 0177 FTLN 0178 FTLN 0179 FTLN 0180 180 FTLN 0181 FTLN 0182 FTLN 0183 FTLN 0184 FTLN 0185 185 FTLN 0186 FTLN 0187 FTLN 0188 FTLN 0189 FTLN 0190 190 21 Hamlet ACT 1. SC. 2 KING Flourish. Enter Claudius, King of Denmark, Gertrude the Queen, the Council, as Polonius, and his son Laertes, Hamlet, with others, among them Voltemand and Cornelius. Though yet of Hamlet our dear brother\u2019s death The memory be green, and that it us befitted"
+    },
+    {
+        "chunk_num": 15,
+        "page_nums": [
+            15
+        ],
+        "text": "Hamlet, with others, among them Voltemand and Cornelius. Though yet of Hamlet our dear brother\u2019s death The memory be green, and that it us befitted To bear our hearts in grief, and our whole kingdom To be contracted in one brow of woe, Yet so far hath discretion fought with nature That we with wisest sorrow think on him Together with remembrance of ourselves. Therefore our sometime sister, now our queen, Th\u2019 imperial jointress to this warlike state, Have we (as \u2019twere with a defeated joy, With an auspicious and a dropping eye, With mirth in funeral and with dirge in marriage, In equal scale weighing delight and dole) Taken to wife. Nor have we herein barred Your better wisdoms, which have freely gone With this affair along. For all, our thanks. Now follows that you know. Young Fortinbras, Holding a weak supposal of our worth Or thinking by our late dear brother\u2019s death Our state to be disjoint and out of frame, Colleagu\u00e8d with this dream of his advantage, He hath not failed to pester us with message Importing the surrender of those lands Lost by his father, with all bonds of law, To our most valiant brother\u2014so much for him. Now for ourself and for this time of meeting. Thus much the business is: we have here writ To Norway, uncle of young Fortinbras, Who, impotent and bedrid, scarcely hears Scene 2 FTLN 0191 FTLN 0192 FTLN 0193 FTLN 0194 FTLN 0195 5 FTLN 0196 FTLN 0197 FTLN"
+    },
+    {
+        "chunk_num": 16,
+        "page_nums": [
+            15,
+            16
+        ],
+        "text": "Fortinbras, Who, impotent and bedrid, scarcely hears Scene 2 FTLN 0191 FTLN 0192 FTLN 0193 FTLN 0194 FTLN 0195 5 FTLN 0196 FTLN 0197 FTLN 0198 FTLN 0199 FTLN 0200 10 FTLN 0201 FTLN 0202 FTLN 0203 FTLN 0204 FTLN 0205 15 FTLN 0206 FTLN 0207 FTLN 0208 FTLN 0209 FTLN 0210 20 FTLN 0211 FTLN 0212 FTLN 0213 FTLN 0214 FTLN 0215 25 FTLN 0216 FTLN 0217 FTLN 0218 FTLN 0219 23 Hamlet ACT 1. SC. 2 Giving them a paper. CORNELIUS/VOLTEMAND KING Voltemand and Cornelius exit. LAERTES KING Of this his nephew\u2019s purpose, to suppress His further gait herein, in that the levies, The lists, and full proportions are all made Out of his subject; and we here dispatch You, good Cornelius, and you, V oltemand, For bearers of this greeting to old Norway, Giving to you no further personal power To business with the King more than the scope Of these dilated articles allow. Farewell, and let your haste commend your duty. In that and all things will we show our duty. We doubt it nothing. Heartily farewell. And now, Laertes, what\u2019s the news with you? You told us of some suit. What is \u2019t, Laertes? You cannot speak of reason to the Dane And lose your voice. What wouldst thou beg, Laertes, That shall not be my offer, not thy asking? The head is not more native to the heart, The hand more instrumental to the mouth, Than is the throne of Denmark to thy father."
+    },
+    {
+        "chunk_num": 17,
+        "page_nums": [
+            16,
+            17
+        ],
+        "text": "The head is not more native to the heart, The hand more instrumental to the mouth, Than is the throne of Denmark to thy father. What wouldst thou have, Laertes? My dread lord, Your leave and favor to return to France, From whence though willingly I came to Denmark To show my duty in your coronation, Yet now I must confess, that duty done, My thoughts and wishes bend again toward France And bow them to your gracious leave and pardon. Have you your father\u2019s leave? What says Polonius? FTLN 0220 30 FTLN 0221 FTLN 0222 FTLN 0223 FTLN 0224 FTLN 0225 35 FTLN 0226 FTLN 0227 FTLN 0228 FTLN 0229 FTLN 0230 40 FTLN 0231 FTLN 0232 FTLN 0233 FTLN 0234 FTLN 0235 45 FTLN 0236 FTLN 0237 FTLN 0238 FTLN 0239 FTLN 0240 50 FTLN 0241 FTLN 0242 FTLN 0243 FTLN 0244 FTLN 0245 55 FTLN 0246 FTLN 0247 FTLN 0248 FTLN 0249 25 Hamlet ACT 1. SC. 2 KING HAMLET KING HAMLET QUEEN HAMLET QUEEN HAMLET POLONIUS Hath, my lord, wrung from me my slow leave By laborsome petition, and at last Upon his will I sealed my hard consent. I do beseech you give him leave to go. Take thy fair hour, Laertes. Time be thine, And thy best graces spend it at thy will.\u2014 But now, my cousin Hamlet and my son\u2014 , aside A little more than kin and less than kind. How is it that the clouds still hang on you? Not so,"
+    },
+    {
+        "chunk_num": 18,
+        "page_nums": [
+            17,
+            18
+        ],
+        "text": "my son\u2014 , aside A little more than kin and less than kind. How is it that the clouds still hang on you? Not so, my lord; I am too much in the sun. Good Hamlet, cast thy nighted color off, And let thine eye look like a friend on Denmark. Do not forever with thy vail\u00e8d lids Seek for thy noble father in the dust. Thou know\u2019st \u2019tis common; all that lives must die, Passing through nature to eternity. Ay, madam, it is common. If it be, Why seems it so particular with thee? \u201cSeems,\u201d madam? Nay, it is. I know not \u201cseems.\u201d \u2019Tis not alone my inky cloak, good mother, Nor customary suits of solemn black, Nor windy suspiration of forced breath, No, nor the fruitful river in the eye, Nor the dejected havior of the visage, Together with all forms, moods, shapes of grief, That can denote me truly. These indeed \u201cseem,\u201d For they are actions that a man might play; FTLN 0250 60 FTLN 0251 FTLN 0252 FTLN 0253 FTLN 0254 FTLN 0255 65 FTLN 0256 FTLN 0257 FTLN 0258 FTLN 0259 FTLN 0260 70 FTLN 0261 FTLN 0262 FTLN 0263 FTLN 0264 FTLN 0265 75 FTLN 0266 FTLN 0267 FTLN 0268 FTLN 0269 FTLN 0270 80 FTLN 0271 FTLN 0272 FTLN 0273 FTLN 0274 FTLN 0275 85 FTLN 0276 FTLN 0277 27 Hamlet ACT 1. SC. 2 KING But I have that within which passes show, These but the trappings and the suits of woe."
+    },
+    {
+        "chunk_num": 19,
+        "page_nums": [
+            17,
+            18
+        ],
+        "text": "0277 27 Hamlet ACT 1. SC. 2 KING But I have that within which passes show, These but the trappings and the suits of woe. \u2019Tis sweet and commendable in your nature, Hamlet, To give these mourning duties to your father. But you must know your father lost a father, That father lost, lost his, and the survivor bound In filial obligation for some term To do obsequious sorrow. But to persever In obstinate condolement is a course Of impious stubbornness. \u2019Tis unmanly grief. It shows a will most incorrect to heaven, A heart unfortified, a mind impatient, An understanding simple and unschooled. For what we know must be and is as common As any the most vulgar thing to sense, Why should we in our peevish opposition Take it to heart? Fie, \u2019tis a fault to heaven, A fault against the dead, a fault to nature, To reason most absurd, whose common theme Is death of fathers, and who still hath cried, From the first corse till he that died today, \u201cThis must be so.\u201d We pray you, throw to earth This unprevailing woe and think of us As of a father; for let the world take note, You are the most immediate to our throne, And with no less nobility of love Than that which dearest father bears his son Do I impart toward you. For your intent In going back to school in Wittenberg, It is most retrograde to our desire, And we beseech you, bend you"
+    },
+    {
+        "chunk_num": 20,
+        "page_nums": [
+            18,
+            19
+        ],
+        "text": "toward you. For your intent In going back to school in Wittenberg, It is most retrograde to our desire, And we beseech you, bend you to remain Here in the cheer and comfort of our eye, Our chiefest courtier, cousin, and our son. FTLN 0278 FTLN 0279 FTLN 0280 90 FTLN 0281 FTLN 0282 FTLN 0283 FTLN 0284 FTLN 0285 95 FTLN 0286 FTLN 0287 FTLN 0288 FTLN 0289 FTLN 0290 100 FTLN 0291 FTLN 0292 FTLN 0293 FTLN 0294 FTLN 0295 105 FTLN 0296 FTLN 0297 FTLN 0298 FTLN 0299 FTLN 0300 110 FTLN 0301 FTLN 0302 FTLN 0303 FTLN 0304 FTLN 0305 115 FTLN 0306 FTLN 0307 FTLN 0308 FTLN 0309 FTLN 0310 120 FTLN 0311 29 Hamlet ACT 1. SC. 2 HAMLET KING Flourish. All but Hamlet exit. HAMLET QUEEN Let not thy mother lose her prayers, Hamlet. I pray thee, stay with us. Go not to Wittenberg. I shall in all my best obey you, madam. Why, \u2019tis a loving and a fair reply. Be as ourself in Denmark.\u2014Madam, come. This gentle and unforced accord of Hamlet Sits smiling to my heart, in grace whereof No jocund health that Denmark drinks today But the great cannon to the clouds shall tell, And the King\u2019s rouse the heaven shall bruit again, Respeaking earthly thunder. Come away. O, that this too, too sullied flesh would melt, Thaw, and resolve itself into a dew, Or that the Everlasting had not fixed His canon \u2019gainst self-slaughter! O God, God, How"
+    },
+    {
+        "chunk_num": 21,
+        "page_nums": [
+            19,
+            20
+        ],
+        "text": "flesh would melt, Thaw, and resolve itself into a dew, Or that the Everlasting had not fixed His canon \u2019gainst self-slaughter! O God, God, How weary, stale, flat, and unprofitable Seem to me all the uses of this world! Fie on \u2019t, ah fie! \u2019Tis an unweeded garden That grows to seed. Things rank and gross in nature Possess it merely. That it should come to this: But two months dead\u2014nay, not so much, not two. So excellent a king, that was to this Hyperion to a satyr; so loving to my mother That he might not beteem the winds of heaven Visit her face too roughly. Heaven and Earth, Must I remember? Why, she would hang on him As if increase of appetite had grown By what it fed on. And yet, within a month (Let me not think on \u2019t; frailty, thy name is woman!), A little month, or ere those shoes were old With which she followed my poor father\u2019s body, FTLN 0312 FTLN 0313 FTLN 0314 FTLN 0315 125 FTLN 0316 FTLN 0317 FTLN 0318 FTLN 0319 FTLN 0320 130 FTLN 0321 FTLN 0322 FTLN 0323 FTLN 0324 FTLN 0325 135 FTLN 0326 FTLN 0327 FTLN 0328 FTLN 0329 FTLN 0330 140 FTLN 0331 FTLN 0332 FTLN 0333 FTLN 0334 FTLN 0335 145 FTLN 0336 FTLN 0337 FTLN 0338 FTLN 0339 FTLN 0340 150 FTLN 0341 FTLN 0342 31 Hamlet ACT 1. SC. 2 HORATIO HAMLET HORATIO HAMLET MARCELLUS HAMLET HORATIO HAMLET Like Niobe, all tears\u2014why"
+    },
+    {
+        "chunk_num": 22,
+        "page_nums": [
+            19,
+            20
+        ],
+        "text": "FTLN 0340 150 FTLN 0341 FTLN 0342 31 Hamlet ACT 1. SC. 2 HORATIO HAMLET HORATIO HAMLET MARCELLUS HAMLET HORATIO HAMLET Like Niobe, all tears\u2014why she, even she (O God, a beast that wants discourse of reason Would have mourned longer!), married with my uncle, My father\u2019s brother, but no more like my father Than I to Hercules. Within a month, Ere yet the salt of most unrighteous tears Had left the flushing in her gall\u00e8d eyes, She married. O, most wicked speed, to post With such dexterity to incestuous sheets! It is not, nor it cannot come to good. But break, my heart, for I must hold my tongue. Enter Horatio, Marcellus, and Barnardo. Hail to your Lordship. I am glad to see you well. Horatio\u2014or I do forget myself! The same, my lord, and your poor servant ever. Sir, my good friend. I\u2019ll change that name with you. And what make you from Wittenberg, Horatio?\u2014 Marcellus? My good lord. I am very glad to see you. To Barnardo. Good even, sir.\u2014 But what, in faith, make you from Wittenberg? A truant disposition, good my lord. I would not hear your enemy say so, Nor shall you do my ear that violence To make it truster of your own report Against yourself. I know you are no truant. But what is your affair in Elsinore? We\u2019ll teach you to drink deep ere you depart. FTLN 0343 FTLN 0344 FTLN 0345 155 FTLN 0346 FTLN 0347 FTLN 0348 FTLN 0349"
+    },
+    {
+        "chunk_num": 23,
+        "page_nums": [
+            20,
+            21
+        ],
+        "text": "Elsinore? We\u2019ll teach you to drink deep ere you depart. FTLN 0343 FTLN 0344 FTLN 0345 155 FTLN 0346 FTLN 0347 FTLN 0348 FTLN 0349 FTLN 0350 160 FTLN 0351 FTLN 0352 FTLN 0353 FTLN 0354 FTLN 0355 165 FTLN 0356 FTLN 0357 FTLN 0358 FTLN 0359 FTLN 0360 170 FTLN 0361 FTLN 0362 FTLN 0363 FTLN 0364 FTLN 0365 175 FTLN 0366 FTLN 0367 FTLN 0368 FTLN 0369 FTLN 0370 180 FTLN 0371 FTLN 0372 33 Hamlet ACT 1. SC. 2 HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HORATIO My lord, I came to see your father\u2019s funeral. I prithee, do not mock me, fellow student. I think it was to see my mother\u2019s wedding. Indeed, my lord, it followed hard upon. Thrift, thrift, Horatio. The funeral baked meats Did coldly furnish forth the marriage tables. Would I had met my dearest foe in heaven Or ever I had seen that day, Horatio! My father\u2014methinks I see my father. Where, my lord? In my mind\u2019s eye, Horatio. I saw him once. He was a goodly king. He was a man. Take him for all in all, I shall not look upon his like again. My lord, I think I saw him yesternight. Saw who? My lord, the King your father. The King my father? Season your admiration for a while With an attent ear, till I may deliver Upon the witness of these gentlemen This marvel to you. For God\u2019s love, let"
+    },
+    {
+        "chunk_num": 24,
+        "page_nums": [
+            21,
+            22
+        ],
+        "text": "for a while With an attent ear, till I may deliver Upon the witness of these gentlemen This marvel to you. For God\u2019s love, let me hear! Two nights together had these gentlemen, Marcellus and Barnardo, on their watch, FTLN 0373 FTLN 0374 FTLN 0375 185 FTLN 0376 FTLN 0377 FTLN 0378 FTLN 0379 FTLN 0380 190 FTLN 0381 FTLN 0382 FTLN 0383 FTLN 0384 FTLN 0385 195 FTLN 0386 FTLN 0387 FTLN 0388 FTLN 0389 FTLN 0390 200 FTLN 0391 FTLN 0392 FTLN 0393 FTLN 0394 FTLN 0395 205 FTLN 0396 FTLN 0397 35 Hamlet ACT 1. SC. 2 HAMLET MARCELLUS HAMLET HORATIO HAMLET HORATIO HAMLET ALL HAMLET In the dead waste and middle of the night, Been thus encountered: a figure like your father, Armed at point exactly, cap-\u00e0-pie, Appears before them and with solemn march Goes slow and stately by them. Thrice he walked By their oppressed and fear-surpris\u00e8d eyes Within his truncheon\u2019s length, whilst they, distilled Almost to jelly with the act of fear, Stand dumb and speak not to him. This to me In dreadful secrecy impart they did, And I with them the third night kept the watch, Where, as they had delivered, both in time, Form of the thing (each word made true and good), The apparition comes. I knew your father; These hands are not more like. But where was this? My lord, upon the platform where we watch. Did you not speak to it? My lord, I did, But answer made"
+    },
+    {
+        "chunk_num": 25,
+        "page_nums": [
+            22,
+            23
+        ],
+        "text": "But where was this? My lord, upon the platform where we watch. Did you not speak to it? My lord, I did, But answer made it none. Yet once methought It lifted up its head and did address Itself to motion, like as it would speak; But even then the morning cock crew loud, And at the sound it shrunk in haste away And vanished from our sight. \u2019Tis very strange. As I do live, my honored lord, \u2019tis true. And we did think it writ down in our duty To let you know of it. Indeed, sirs, but this troubles me. Hold you the watch tonight? We do, my lord. Armed, say you? FTLN 0398 FTLN 0399 FTLN 0400 210 FTLN 0401 FTLN 0402 FTLN 0403 FTLN 0404 FTLN 0405 215 FTLN 0406 FTLN 0407 FTLN 0408 FTLN 0409 FTLN 0410 220 FTLN 0411 FTLN 0412 FTLN 0413 FTLN 0414 FTLN 0415 225 FTLN 0416 FTLN 0417 FTLN 0418 FTLN 0419 FTLN 0420 230 FTLN 0421 FTLN 0422 FTLN 0423 FTLN 0424 FTLN 0425 235 FTLN 0426 FTLN 0427 FTLN 0428 FTLN 0429 FTLN 0430 240 37 Hamlet ACT 1. SC. 2 HAMLET ALL HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET HORATIO BARNARDO/MARCELLUS HORATIO HAMLET HORATIO HAMLET HORATIO HAMLET ALL Armed, my lord. From top to toe? My lord, from head to foot. Then saw you not his face? O, yes, my lord, he wore his beaver up. What, looked he frowningly? A countenance more"
+    },
+    {
+        "chunk_num": 26,
+        "page_nums": [
+            23,
+            24
+        ],
+        "text": "head to foot. Then saw you not his face? O, yes, my lord, he wore his beaver up. What, looked he frowningly? A countenance more in sorrow than in anger. Pale or red? Nay, very pale. And fixed his eyes upon you? Most constantly. I would I had been there. It would have much amazed you. Very like. Stayed it long? While one with moderate haste might tell a hundred. Longer, longer. Not when I saw \u2019t. His beard was grizzled, no? It was as I have seen it in his life, A sable silvered. I will watch tonight. Perchance \u2019twill walk again. I warrant it will. If it assume my noble father\u2019s person, I\u2019ll speak to it, though hell itself should gape And bid me hold my peace. I pray you all, If you have hitherto concealed this sight, FTLN 0431 FTLN 0432 FTLN 0433 FTLN 0434 FTLN 0435 245 FTLN 0436 FTLN 0437 FTLN 0438 FTLN 0439 FTLN 0440 250 FTLN 0441 FTLN 0442 FTLN 0443 FTLN 0444 FTLN 0445 255 FTLN 0446 FTLN 0447 FTLN 0448 FTLN 0449 FTLN 0450 260 FTLN 0451 FTLN 0452 FTLN 0453 FTLN 0454 FTLN 0455 265 FTLN 0456 FTLN 0457 FTLN 0458 39 Hamlet ACT 1. SC. 3 ALL HAMLET All but Hamlet exit. He exits. LAERTES OPHELIA LAERTES OPHELIA LAERTES Let it be tenable in your silence still; And whatsomever else shall hap tonight, Give it an understanding but no tongue. I will requite your loves. So fare you well."
+    },
+    {
+        "chunk_num": 27,
+        "page_nums": [
+            24,
+            25
+        ],
+        "text": "your silence still; And whatsomever else shall hap tonight, Give it an understanding but no tongue. I will requite your loves. So fare you well. Upon the platform, \u2019twixt eleven and twelve, I\u2019ll visit you. Our duty to your Honor. Your loves, as mine to you. Farewell. My father\u2019s spirit\u2014in arms! All is not well. I doubt some foul play. Would the night were come! Till then, sit still, my soul. Foul deeds will rise, Though all the earth o\u2019erwhelm them, to men\u2019s eyes. Enter Laertes and Ophelia, his sister. My necessaries are embarked. Farewell. And, sister, as the winds give benefit And convey is assistant, do not sleep, But let me hear from you. Do you doubt that? For Hamlet, and the trifling of his favor, Hold it a fashion and a toy in blood, A violet in the youth of primy nature, Forward, not permanent, sweet, not lasting, The perfume and suppliance of a minute, No more. No more but so? Think it no more. FTLN 0459 FTLN 0460 270 FTLN 0461 FTLN 0462 FTLN 0463 FTLN 0464 FTLN 0465 275 FTLN 0466 FTLN 0467 FTLN 0468 FTLN 0469 FTLN 0470 280 FTLN 0471 Scene 3 FTLN 0472 FTLN 0473 FTLN 0474 FTLN 0475 FTLN 0476 5 FTLN 0477 FTLN 0478 FTLN 0479 FTLN 0480 FTLN 0481 10 FTLN 0482 FTLN 0483 FTLN 0484 41 Hamlet ACT 1. SC. 3 OPHELIA For nature, crescent, does not grow alone In thews and bulk, but, as this temple waxes, The"
+    },
+    {
+        "chunk_num": 28,
+        "page_nums": [
+            24,
+            25
+        ],
+        "text": "0484 41 Hamlet ACT 1. SC. 3 OPHELIA For nature, crescent, does not grow alone In thews and bulk, but, as this temple waxes, The inward service of the mind and soul Grows wide withal. Perhaps he loves you now, And now no soil nor cautel doth besmirch The virtue of his will; but you must fear, His greatness weighed, his will is not his own, For he himself is subject to his birth. He may not, as unvalued persons do, Carve for himself, for on his choice depends The safety and the health of this whole state. And therefore must his choice be circumscribed Unto the voice and yielding of that body Whereof he is the head. Then, if he says he loves you, It fits your wisdom so far to believe it As he in his particular act and place May give his saying deed, which is no further Than the main voice of Denmark goes withal. Then weigh what loss your honor may sustain If with too credent ear you list his songs Or lose your heart or your chaste treasure open To his unmastered importunity. Fear it, Ophelia; fear it, my dear sister, And keep you in the rear of your affection, Out of the shot and danger of desire. The chariest maid is prodigal enough If she unmask her beauty to the moon. Virtue itself \u2019scapes not calumnious strokes. The canker galls the infants of the spring Too oft before their buttons be disclosed, And,"
+    },
+    {
+        "chunk_num": 29,
+        "page_nums": [
+            25,
+            26
+        ],
+        "text": "to the moon. Virtue itself \u2019scapes not calumnious strokes. The canker galls the infants of the spring Too oft before their buttons be disclosed, And, in the morn and liquid dew of youth, Contagious blastments are most imminent. Be wary, then; best safety lies in fear. Youth to itself rebels, though none else near. I shall the effect of this good lesson keep FTLN 0485 FTLN 0486 15 FTLN 0487 FTLN 0488 FTLN 0489 FTLN 0490 FTLN 0491 20 FTLN 0492 FTLN 0493 FTLN 0494 FTLN 0495 FTLN 0496 25 FTLN 0497 FTLN 0498 FTLN 0499 FTLN 0500 FTLN 0501 30 FTLN 0502 FTLN 0503 FTLN 0504 FTLN 0505 FTLN 0506 35 FTLN 0507 FTLN 0508 FTLN 0509 FTLN 0510 FTLN 0511 40 FTLN 0512 FTLN 0513 FTLN 0514 FTLN 0515 FTLN 0516 45 FTLN 0517 FTLN 0518 FTLN 0519 FTLN 0520 43 Hamlet ACT 1. SC. 3 LAERTES POLONIUS As watchman to my heart. But, good my brother, Do not, as some ungracious pastors do, Show me the steep and thorny way to heaven, Whiles, like a puffed and reckless libertine, Himself the primrose path of dalliance treads And recks not his own rede. O, fear me not. Enter Polonius. I stay too long. But here my father comes. A double blessing is a double grace. Occasion smiles upon a second leave. Yet here, Laertes? Aboard, aboard, for shame! The wind sits in the shoulder of your sail, And you are stayed for. There, my blessing with thee. And"
+    },
+    {
+        "chunk_num": 30,
+        "page_nums": [
+            26,
+            27
+        ],
+        "text": "Laertes? Aboard, aboard, for shame! The wind sits in the shoulder of your sail, And you are stayed for. There, my blessing with thee. And these few precepts in thy memory Look thou character. Give thy thoughts no tongue, Nor any unproportioned thought his act. Be thou familiar, but by no means vulgar. Those friends thou hast, and their adoption tried, Grapple them unto thy soul with hoops of steel, But do not dull thy palm with entertainment Of each new-hatched, unfledged courage. Beware Of entrance to a quarrel, but, being in, Bear \u2019t that th\u2019 oppos\u00e8d may beware of thee. Give every man thy ear, but few thy voice. Take each man\u2019s censure, but reserve thy judgment. Costly thy habit as thy purse can buy, But not expressed in fancy (rich, not gaudy), For the apparel oft proclaims the man, And they in France of the best rank and station Are of a most select and generous chief in that. Neither a borrower nor a lender be, For loan oft loses both itself and friend, FTLN 0521 50 FTLN 0522 FTLN 0523 FTLN 0524 FTLN 0525 FTLN 0526 55 FTLN 0527 FTLN 0528 FTLN 0529 FTLN 0530 FTLN 0531 60 FTLN 0532 FTLN 0533 FTLN 0534 FTLN 0535 FTLN 0536 65 FTLN 0537 FTLN 0538 FTLN 0539 FTLN 0540 FTLN 0541 70 FTLN 0542 FTLN 0543 FTLN 0544 FTLN 0545 FTLN 0546 75 FTLN 0547 FTLN 0548 FTLN 0549 FTLN 0550 FTLN 0551 80 FTLN 0552 FTLN 0553 45"
+    },
+    {
+        "chunk_num": 31,
+        "page_nums": [
+            26,
+            27
+        ],
+        "text": "FTLN 0543 FTLN 0544 FTLN 0545 FTLN 0546 75 FTLN 0547 FTLN 0548 FTLN 0549 FTLN 0550 FTLN 0551 80 FTLN 0552 FTLN 0553 45 Hamlet ACT 1. SC. 3 LAERTES POLONIUS LAERTES OPHELIA LAERTES Laertes exits. POLONIUS OPHELIA POLONIUS OPHELIA POLONIUS And borrowing dulls the edge of husbandry. This above all: to thine own self be true, And it must follow, as the night the day, Thou canst not then be false to any man. Farewell. My blessing season this in thee. Most humbly do I take my leave, my lord. The time invests you. Go, your servants tend. Farewell, Ophelia, and remember well What I have said to you. \u2019Tis in my memory locked, And you yourself shall keep the key of it. Farewell. What is \u2019t, Ophelia, he hath said to you? So please you, something touching the Lord Hamlet. Marry, well bethought. \u2019Tis told me he hath very oft of late Given private time to you, and you yourself Have of your audience been most free and bounteous. If it be so (as so \u2019tis put on me, And that in way of caution), I must tell you You do not understand yourself so clearly As it behooves my daughter and your honor. What is between you? Give me up the truth. He hath, my lord, of late made many tenders Of his affection to me. Affection, puh! You speak like a green girl Unsifted in such perilous circumstance. Do you believe his \u201ctenders,\u201d as you"
+    },
+    {
+        "chunk_num": 32,
+        "page_nums": [
+            27,
+            28
+        ],
+        "text": "Of his affection to me. Affection, puh! You speak like a green girl Unsifted in such perilous circumstance. Do you believe his \u201ctenders,\u201d as you call them? FTLN 0554 FTLN 0555 FTLN 0556 85 FTLN 0557 FTLN 0558 FTLN 0559 FTLN 0560 FTLN 0561 90 FTLN 0562 FTLN 0563 FTLN 0564 FTLN 0565 FTLN 0566 95 FTLN 0567 FTLN 0568 FTLN 0569 FTLN 0570 FTLN 0571 100 FTLN 0572 FTLN 0573 FTLN 0574 FTLN 0575 FTLN 0576 105 FTLN 0577 FTLN 0578 FTLN 0579 FTLN 0580 FTLN 0581 110 FTLN 0582 FTLN 0583 47 Hamlet ACT 1. SC. 3 POLONIUS OPHELIA POLONIUS OPHELIA POLONIUS OPHELIA I do not know, my lord, what I should think. Marry, I will teach you. Think yourself a baby That you have ta\u2019en these tenders for true pay, Which are not sterling. Tender yourself more dearly, Or (not to crack the wind of the poor phrase, Running it thus) you\u2019ll tender me a fool. My lord, he hath importuned me with love In honorable fashion\u2014 Ay, \u201cfashion\u201d you may call it. Go to, go to! And hath given countenance to his speech, my lord, With almost all the holy vows of heaven. Ay, springes to catch woodcocks. I do know, When the blood burns, how prodigal the soul Lends the tongue vows. These blazes, daughter, Giving more light than heat, extinct in both Even in their promise as it is a-making, You must not take for fire. From this time Be something scanter of your"
+    },
+    {
+        "chunk_num": 33,
+        "page_nums": [
+            28,
+            29
+        ],
+        "text": "extinct in both Even in their promise as it is a-making, You must not take for fire. From this time Be something scanter of your maiden presence. Set your entreatments at a higher rate Than a command to parle. For Lord Hamlet, Believe so much in him that he is young, And with a larger tether may he walk Than may be given you. In few, Ophelia, Do not believe his vows, for they are brokers, Not of that dye which their investments show, But mere implorators of unholy suits, Breathing like sanctified and pious bawds The better to beguile. This is for all: I would not, in plain terms, from this time forth Have you so slander any moment leisure FTLN 0584 FTLN 0585 FTLN 0586 115 FTLN 0587 FTLN 0588 FTLN 0589 FTLN 0590 FTLN 0591 120 FTLN 0592 FTLN 0593 FTLN 0594 FTLN 0595 FTLN 0596 125 FTLN 0597 FTLN 0598 FTLN 0599 FTLN 0600 FTLN 0601 130 FTLN 0602 FTLN 0603 FTLN 0604 FTLN 0605 FTLN 0606 135 FTLN 0607 FTLN 0608 FTLN 0609 FTLN 0610 FTLN 0611 140 FTLN 0612 FTLN 0613 49 Hamlet ACT 1. SC. 4 OPHELIA They exit. HAMLET HORATIO HAMLET HORATIO MARCELLUS HORATIO A flourish of trumpets and two pieces goes off. HAMLET HORATIO HAMLET As to give words or talk with the Lord Hamlet. Look to \u2019t, I charge you. Come your ways. I shall obey, my lord. Enter Hamlet, Horatio, and Marcellus. The air bites shrewdly; it is very"
+    },
+    {
+        "chunk_num": 34,
+        "page_nums": [
+            29,
+            30
+        ],
+        "text": "to \u2019t, I charge you. Come your ways. I shall obey, my lord. Enter Hamlet, Horatio, and Marcellus. The air bites shrewdly; it is very cold. It is a nipping and an eager air. What hour now? I think it lacks of twelve. No, it is struck. Indeed, I heard it not. It then draws near the season Wherein the spirit held his wont to walk. What does this mean, my lord? The King doth wake tonight and takes his rouse, Keeps wassail, and the swagg\u2019ring upspring reels; And, as he drains his draughts of Rhenish down, The kettledrum and trumpet thus bray out The triumph of his pledge. Is it a custom? Ay, marry, is \u2019t, But, to my mind, though I am native here And to the manner born, it is a custom More honored in the breach than the observance. This heavy-headed revel east and west Makes us traduced and taxed of other nations. They clepe us drunkards and with swinish phrase Soil our addition. And, indeed, it takes FTLN 0614 FTLN 0615 FTLN 0616 145 Scene 4 FTLN 0617 FTLN 0618 FTLN 0619 FTLN 0620 FTLN 0621 5 FTLN 0622 FTLN 0623 FTLN 0624 FTLN 0625 FTLN 0626 10 FTLN 0627 FTLN 0628 FTLN 0629 FTLN 0630 FTLN 0631 15 FTLN 0632 FTLN 0633 FTLN 0634 FTLN 0635 FTLN 0636 20 FTLN 0637 FTLN 0638 51 Hamlet ACT 1. SC. 4 HORATIO HAMLET From our achievements, though performed at height, The pith and marrow of our"
+    },
+    {
+        "chunk_num": 35,
+        "page_nums": [
+            29,
+            30
+        ],
+        "text": "FTLN 0637 FTLN 0638 51 Hamlet ACT 1. SC. 4 HORATIO HAMLET From our achievements, though performed at height, The pith and marrow of our attribute. So oft it chances in particular men That for some vicious mole of nature in them, As in their birth (wherein they are not guilty, Since nature cannot choose his origin), By the o\u2019ergrowth of some complexion (Oft breaking down the pales and forts of reason), Or by some habit that too much o\u2019erleavens The form of plausive manners\u2014that these men, Carrying, I say, the stamp of one defect, Being nature\u2019s livery or fortune\u2019s star, His virtues else, be they as pure as grace, As infinite as man may undergo, Shall in the general censure take corruption From that particular fault. The dram of evil Doth all the noble substance of a doubt To his own scandal. Enter Ghost. Look, my lord, it comes. Angels and ministers of grace, defend us! Be thou a spirit of health or goblin damned, Bring with thee airs from heaven or blasts from hell, Be thy intents wicked or charitable, Thou com\u2019st in such a questionable shape That I will speak to thee. I\u2019ll call thee \u201cHamlet,\u201d \u201cKing,\u201d \u201cFather,\u201d \u201cRoyal Dane.\u201d O, answer me! Let me not burst in ignorance, but tell Why thy canonized bones, hears\u00e8d in death, Have burst their cerements; why the sepulcher, Wherein we saw thee quietly interred, Hath oped his ponderous and marble jaws FTLN 0639 FTLN 0640 FTLN 0641 25 FTLN 0642"
+    },
+    {
+        "chunk_num": 36,
+        "page_nums": [
+            30,
+            31
+        ],
+        "text": "why the sepulcher, Wherein we saw thee quietly interred, Hath oped his ponderous and marble jaws FTLN 0639 FTLN 0640 FTLN 0641 25 FTLN 0642 FTLN 0643 FTLN 0644 FTLN 0645 FTLN 0646 30 FTLN 0647 FTLN 0648 FTLN 0649 FTLN 0650 FTLN 0651 35 FTLN 0652 FTLN 0653 FTLN 0654 FTLN 0655 FTLN 0656 40 FTLN 0657 FTLN 0658 FTLN 0659 FTLN 0660 FTLN 0661 45 FTLN 0662 FTLN 0663 FTLN 0664 FTLN 0665 FTLN 0666 50 FTLN 0667 FTLN 0668 FTLN 0669 FTLN 0670 FTLN 0671 55 53 Hamlet ACT 1. SC. 4 Ghost beckons. HORATIO MARCELLUS HORATIO HAMLET HORATIO HAMLET HORATIO To cast thee up again. What may this mean That thou, dead corse, again in complete steel, Revisits thus the glimpses of the moon, Making night hideous, and we fools of nature So horridly to shake our disposition With thoughts beyond the reaches of our souls? Say, why is this? Wherefore? What should we do? It beckons you to go away with it As if it some impartment did desire To you alone. Look with what courteous action It waves you to a more remov\u00e8d ground. But do not go with it. No, by no means. It will not speak. Then I will follow it. Do not, my lord. Why, what should be the fear? I do not set my life at a pin\u2019s fee. And for my soul, what can it do to that, Being a thing immortal as itself? It waves me forth again."
+    },
+    {
+        "chunk_num": 37,
+        "page_nums": [
+            31,
+            32
+        ],
+        "text": "at a pin\u2019s fee. And for my soul, what can it do to that, Being a thing immortal as itself? It waves me forth again. I\u2019ll follow it. What if it tempt you toward the flood, my lord? Or to the dreadful summit of the cliff That beetles o\u2019er his base into the sea, And there assume some other horrible form Which might deprive your sovereignty of reason And draw you into madness? Think of it. The very place puts toys of desperation, Without more motive, into every brain That looks so many fathoms to the sea And hears it roar beneath. FTLN 0672 FTLN 0673 FTLN 0674 FTLN 0675 FTLN 0676 60 FTLN 0677 FTLN 0678 FTLN 0679 FTLN 0680 FTLN 0681 65 FTLN 0682 FTLN 0683 FTLN 0684 FTLN 0685 FTLN 0686 70 FTLN 0687 FTLN 0688 FTLN 0689 FTLN 0690 FTLN 0691 75 FTLN 0692 FTLN 0693 FTLN 0694 FTLN 0695 FTLN 0696 80 FTLN 0697 FTLN 0698 FTLN 0699 FTLN 0700 FTLN 0701 85 FTLN 0702 55 Hamlet ACT 1. SC. 5 MARCELLUS They hold back Hamlet. HAMLET HORATIO HAMLET Ghost and Hamlet exit. HORATIO MARCELLUS HORATIO MARCELLUS HORATIO MARCELLUS They exit. HAMLET HAMLET GHOST It waves me still.\u2014Go on, I\u2019ll follow thee. You shall not go, my lord. Hold off your hands. Be ruled. You shall not go. My fate cries out And makes each petty arture in this body As hardy as the Nemean lion\u2019s nerve. Still am I called. Unhand me, gentlemen. By"
+    },
+    {
+        "chunk_num": 38,
+        "page_nums": [
+            32,
+            33
+        ],
+        "text": "cries out And makes each petty arture in this body As hardy as the Nemean lion\u2019s nerve. Still am I called. Unhand me, gentlemen. By heaven, I\u2019ll make a ghost of him that lets me! I say, away!\u2014Go on. I\u2019ll follow thee. He waxes desperate with imagination. Let\u2019s follow. \u2019Tis not fit thus to obey him. Have after. To what issue will this come? Something is rotten in the state of Denmark. Heaven will direct it. Nay, let\u2019s follow him. Enter Ghost and Hamlet. Whither wilt thou lead me? Speak. I\u2019ll go no further. Mark me. FTLN 0703 FTLN 0704 FTLN 0705 FTLN 0706 90 FTLN 0707 FTLN 0708 FTLN 0709 FTLN 0710 FTLN 0711 95 FTLN 0712 FTLN 0713 FTLN 0714 FTLN 0715 FTLN 0716 100 FTLN 0717 FTLN 0718 Scene 5 FTLN 0719 FTLN 0720 FTLN 0721 57 Hamlet ACT 1. SC. 5 GHOST HAMLET GHOST HAMLET GHOST HAMLET GHOST HAMLET GHOST HAMLET GHOST HAMLET HAMLET I will. My hour is almost come When I to sulf\u2019rous and tormenting flames Must render up myself. Alas, poor ghost! Pity me not, but lend thy serious hearing To what I shall unfold. Speak. I am bound to hear. So art thou to revenge, when thou shalt hear. What? I am thy father\u2019s spirit, Doomed for a certain term to walk the night And for the day confined to fast in fires Till the foul crimes done in my days of nature Are burnt and purged away. But that I am"
+    },
+    {
+        "chunk_num": 39,
+        "page_nums": [
+            33,
+            34
+        ],
+        "text": "day confined to fast in fires Till the foul crimes done in my days of nature Are burnt and purged away. But that I am forbid To tell the secrets of my prison house, I could a tale unfold whose lightest word Would harrow up thy soul, freeze thy young blood, Make thy two eyes, like stars, start from their spheres, Thy knotted and combin\u00e8d locks to part, And each particular hair to stand an end, Like quills upon the fearful porpentine. But this eternal blazon must not be To ears of flesh and blood. List, list, O list! If thou didst ever thy dear father love\u2014 O God! Revenge his foul and most unnatural murder. Murder? Murder most foul, as in the best it is, But this most foul, strange, and unnatural. Haste me to know \u2019t, that I, with wings as swift FTLN 0722 FTLN 0723 5 FTLN 0724 FTLN 0725 FTLN 0726 FTLN 0727 FTLN 0728 10 FTLN 0729 FTLN 0730 FTLN 0731 FTLN 0732 FTLN 0733 15 FTLN 0734 FTLN 0735 FTLN 0736 FTLN 0737 FTLN 0738 20 FTLN 0739 FTLN 0740 FTLN 0741 FTLN 0742 FTLN 0743 25 FTLN 0744 FTLN 0745 FTLN 0746 FTLN 0747 FTLN 0748 30 FTLN 0749 FTLN 0750 FTLN 0751 FTLN 0752 FTLN 0753 35 59 Hamlet ACT 1. SC. 5 GHOST HAMLET GHOST As meditation or the thoughts of love, May sweep to my revenge. I find thee apt; And duller shouldst thou be than the fat weed That"
+    },
+    {
+        "chunk_num": 40,
+        "page_nums": [
+            34
+        ],
+        "text": "meditation or the thoughts of love, May sweep to my revenge. I find thee apt; And duller shouldst thou be than the fat weed That roots itself in ease on Lethe wharf, Wouldst thou not stir in this. Now, Hamlet, hear. \u2019Tis given out that, sleeping in my orchard, A serpent stung me. So the whole ear of Denmark Is by a forg\u00e8d process of my death Rankly abused. But know, thou noble youth, The serpent that did sting thy father\u2019s life Now wears his crown. O, my prophetic soul! My uncle! Ay, that incestuous, that adulterate beast, With witchcraft of his wits, with traitorous gifts\u2014 O wicked wit and gifts, that have the power So to seduce!\u2014won to his shameful lust The will of my most seeming-virtuous queen. O Hamlet, what a falling off was there! From me, whose love was of that dignity That it went hand in hand even with the vow I made to her in marriage, and to decline Upon a wretch whose natural gifts were poor To those of mine. But virtue, as it never will be moved, Though lewdness court it in a shape of heaven, So, lust, though to a radiant angel linked, Will sate itself in a celestial bed And prey on garbage. But soft, methinks I scent the morning air. Brief let me be. Sleeping within my orchard, My custom always of the afternoon, Upon my secure hour thy uncle stole, With juice of curs\u00e8d hebona in a vial And"
+    },
+    {
+        "chunk_num": 41,
+        "page_nums": [
+            34,
+            35
+        ],
+        "text": "within my orchard, My custom always of the afternoon, Upon my secure hour thy uncle stole, With juice of curs\u00e8d hebona in a vial And in the porches of my ears did pour FTLN 0754 FTLN 0755 FTLN 0756 FTLN 0757 FTLN 0758 40 FTLN 0759 FTLN 0760 FTLN 0761 FTLN 0762 FTLN 0763 45 FTLN 0764 FTLN 0765 FTLN 0766 FTLN 0767 FTLN 0768 50 FTLN 0769 FTLN 0770 FTLN 0771 FTLN 0772 FTLN 0773 55 FTLN 0774 FTLN 0775 FTLN 0776 FTLN 0777 FTLN 0778 60 FTLN 0779 FTLN 0780 FTLN 0781 FTLN 0782 FTLN 0783 65 FTLN 0784 FTLN 0785 FTLN 0786 FTLN 0787 FTLN 0788 70 61 Hamlet ACT 1. SC. 5 He exits. HAMLET The leprous distilment, whose effect Holds such an enmity with blood of man That swift as quicksilver it courses through The natural gates and alleys of the body, And with a sudden vigor it doth posset And curd, like eager droppings into milk, The thin and wholesome blood. So did it mine, And a most instant tetter barked about, Most lazar-like, with vile and loathsome crust All my smooth body. Thus was I, sleeping, by a brother\u2019s hand Of life, of crown, of queen at once dispatched, Cut off, even in the blossoms of my sin, Unhouseled, disappointed, unaneled, No reck\u2019ning made, but sent to my account With all my imperfections on my head. O horrible, O horrible, most horrible! If thou hast nature in thee, bear it not. Let not"
+    },
+    {
+        "chunk_num": 42,
+        "page_nums": [
+            35,
+            36
+        ],
+        "text": "account With all my imperfections on my head. O horrible, O horrible, most horrible! If thou hast nature in thee, bear it not. Let not the royal bed of Denmark be A couch for luxury and damn\u00e8d incest. But, howsomever thou pursues this act, Taint not thy mind, nor let thy soul contrive Against thy mother aught. Leave her to heaven And to those thorns that in her bosom lodge To prick and sting her. Fare thee well at once. The glowworm shows the matin to be near And \u2019gins to pale his uneffectual fire. Adieu, adieu, adieu. Remember me. O all you host of heaven! O Earth! What else? And shall I couple hell? O fie! Hold, hold, my heart, And you, my sinews, grow not instant old, But bear me stiffly up. Remember thee? Ay, thou poor ghost, whiles memory holds a seat In this distracted globe. Remember thee? Yea, from the table of my memory FTLN 0789 FTLN 0790 FTLN 0791 FTLN 0792 FTLN 0793 75 FTLN 0794 FTLN 0795 FTLN 0796 FTLN 0797 FTLN 0798 80 FTLN 0799 FTLN 0800 FTLN 0801 FTLN 0802 FTLN 0803 85 FTLN 0804 FTLN 0805 FTLN 0806 FTLN 0807 FTLN 0808 90 FTLN 0809 FTLN 0810 FTLN 0811 FTLN 0812 FTLN 0813 95 FTLN 0814 FTLN 0815 FTLN 0816 FTLN 0817 FTLN 0818 100 FTLN 0819 FTLN 0820 FTLN 0821 FTLN 0822 FTLN 0823 105 63 Hamlet ACT 1. SC. 5 He writes. HORATIO MARCELLUS HORATIO HAMLET MARCELLUS HAMLET MARCELLUS"
+    },
+    {
+        "chunk_num": 43,
+        "page_nums": [
+            35,
+            36
+        ],
+        "text": "0819 FTLN 0820 FTLN 0821 FTLN 0822 FTLN 0823 105 63 Hamlet ACT 1. SC. 5 He writes. HORATIO MARCELLUS HORATIO HAMLET MARCELLUS HAMLET MARCELLUS HORATIO HAMLET HORATIO HAMLET HORATIO MARCELLUS HAMLET I\u2019ll wipe away all trivial, fond records, All saws of books, all forms, all pressures past, That youth and observation copied there, And thy commandment all alone shall live Within the book and volume of my brain, Unmixed with baser matter. Yes, by heaven! O most pernicious woman! O villain, villain, smiling, damn\u00e8d villain! My tables\u2014meet it is I set it down That one may smile and smile and be a villain. At least I am sure it may be so in Denmark. So, uncle, there you are. Now to my word. It is \u201cadieu, adieu, remember me.\u201d I have sworn \u2019t. Enter Horatio and Marcellus. My lord, my lord! Lord Hamlet. Heavens secure him! So be it. Illo, ho, ho, my lord! Hillo, ho, ho, boy! Come, bird, come! How is \u2019t, my noble lord? What news, my lord? O, wonderful! Good my lord, tell it. No, you will reveal it. Not I, my lord, by heaven. Nor I, my lord. How say you, then? Would heart of man once think it? But you\u2019ll be secret? FTLN 0824 FTLN 0825 FTLN 0826 FTLN 0827 FTLN 0828 110 FTLN 0829 FTLN 0830 FTLN 0831 FTLN 0832 FTLN 0833 115 FTLN 0834 FTLN 0835 FTLN 0836 FTLN 0837 FTLN 0838 120 FTLN 0839 FTLN 0840 FTLN 0841 FTLN 0842"
+    },
+    {
+        "chunk_num": 44,
+        "page_nums": [
+            36
+        ],
+        "text": "0831 FTLN 0832 FTLN 0833 115 FTLN 0834 FTLN 0835 FTLN 0836 FTLN 0837 FTLN 0838 120 FTLN 0839 FTLN 0840 FTLN 0841 FTLN 0842 FTLN 0843 125 FTLN 0844 FTLN 0845 FTLN 0846 FTLN 0847 FTLN 0848 130 FTLN 0849 FTLN 0850 FTLN 0851 FTLN 0852 FTLN 0853 135"
+    }
+]
