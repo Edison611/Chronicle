@@ -64,8 +64,7 @@ const Timeline2 = ({ timeline, moveCharacterToTimeline, assignments }) => {
               cardHeight={150}
               hideControls={true}
               theme={{
-                primary: "#4F46E5",
-                secondary: "#1E40AF",
+                primary: "#2564ec",
                 cardBgColor: "white",
                 cardForeColor: "black",
                 titleColor: "black",

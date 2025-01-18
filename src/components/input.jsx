@@ -46,7 +46,7 @@ export default function Input() {
               value={story}
               onChange={(e) => setStory(e.target.value)}
               placeholder="Enter your story here..."
-              rows="5"
+              rows="7"
               className="w-full p-4 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             />
             <button
