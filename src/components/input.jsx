@@ -29,7 +29,7 @@ export default function Input() {
 
     const getStories = async () => {
         try {
-            const response = await fetch("http://localhost:5001/api/stories");
+            const response = await fetch("http://localhost:6969/api/stories");
             if (response.ok) {
                 const data = await response.json();
                 setStories(data.stories);
@@ -44,7 +44,7 @@ export default function Input() {
     const chooseStory = async (index) => {
         try {
             const response = await fetch(
-                `http://localhost:5001/api/getstory?index=${index}`
+                `http://localhost:6969/api/getstory?index=${index}`
             );
             if (response.ok) {
                 const data = await response.json();
@@ -71,7 +71,7 @@ export default function Input() {
                 formData.append("file", file);
 
                 const response = await fetch(
-                    "http://localhost:5001/api/upload",
+                    "http://localhost:6969/api/upload",
                     {
                         method: "POST",
                         body: formData,
@@ -113,7 +113,7 @@ export default function Input() {
                             <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
                                 Choose Story
                             </h2>
-                            <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white">
+                            <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white no-scrollbar">
                                 <div className="space-y-4 p-4 flex flex-col">
                                     {stories.length === 0 ? (
                                         <div className="text-gray-500 text-center py-4">
@@ -171,7 +171,7 @@ export default function Input() {
                                 <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
                                     Characters
                                 </h2>
-                                <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white">
+                                <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white no-scrollbar">
                                     <div className="space-y-4 p-4">
                                         {characters.length === 0 ? (
                                             <div className="text-gray-500 text-center py-4">
@@ -194,7 +194,7 @@ export default function Input() {
                     {/* Timeline */}
                     <section className="w-1/2">
                         <DndProvider backend={HTML5Backend}>
-                            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-none transition-all h-[745px] overflow-y-scroll">
+                            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-none transition-all h-[745px] overflow-y-auto no-scrollbar">
                                 <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
                                     Timeline
                                 </h2>

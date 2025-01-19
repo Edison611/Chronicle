@@ -3,7 +3,3 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-
-body.react-beautiful-dnd-dragging {
-    user-select: none;
-}
