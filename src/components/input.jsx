@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useDrag, useDrop, DndProvider } from "react-dnd";
+import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { useNavigate } from "react-router-dom";
+import DraggableCharacter from "./draggableCharacter";
 import Timeline2 from "./timeline2";
 import "./input.css";
 
@@ -141,62 +142,34 @@ export default function Input() {
                                         onDragOver={handleDragOver}
                                         onDrop={handleDrop}
                                     />
-
-                                    {isDragging && (
-                                        <div className="absolute inset-0 bg-blue-50 bg-opacity-75 flex items-center justify-center rounded-xl border-2 border-dashed border-blue-400">
-                                            <p className="text-blue-500 font-semibold">
-                                                Drop PDF here
-                                            </p>
-                                        </div>
-                                    )}
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <form className="form-container w-[48.5%]">
-                                        <div className="px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition flex justify-evenly">
-                                            <input
-                                                className="input"
-                                                name="file"
-                                                type="file"
-                                                accept="application/pdf"
-                                                onChange={handleChange}
-                                            ></input>
-                                            {!file && (
-                                                <svg
-                                                    className="icon-upload"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="1em"
-                                                    height="1em"
-                                                    stroke-linejoin="round"
-                                                    stroke-linecap="round"
-                                                    viewBox="0 0 24 24"
-                                                    stroke-width="2"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                >
-                                                    <polyline points="16 16 12 12 8 16"></polyline>
-                                                    <line
-                                                        y2="21"
-                                                        x2="12"
-                                                        y1="12"
-                                                        x1="12"
-                                                    ></line>
-                                                    <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
-                                                    <polyline points="16 16 12 12 8 16"></polyline>
-                                                </svg>
-                                            )}
-                                            Upload a File
-                                            {file && (
-                                                <p className="file-selected">
-                                                    {file.name}
-                                                </p>
-                                            )}
-                                        </div>
-                                    </form>
-                                    <button
-                                        type="submit"
-                                        className="w-[48.5%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition"
-                                    >
-                                        Analyze Story
+                                    <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                        <input
+                                            className="input"
+                                            name="file"
+                                            type="file"
+                                            accept="application/pdf"
+                                            onChange={handleChange}
+                                        ></input>
+                                        <span class="material-symbols-outlined">
+                                            cloud_upload
+                                        </span>
+                                        Upload
+                                    </button>
+
+                                    <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                        <span class="material-symbols-outlined">
+                                            check
+                                        </span>
+                                        Load
+                                    </button>
+
+                                    <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                        Delete
                                     </button>
                                 </div>
                             </form>
