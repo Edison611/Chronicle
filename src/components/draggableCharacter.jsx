@@ -1,3 +1,5 @@
+import { useDrag, useDrop, DndProvider } from "react-dnd";
+
 const DraggableCharacter = ({ character }) => {
     const [{ isDragging }, drag] = useDrag(() => ({
         type: "CHARACTER",
