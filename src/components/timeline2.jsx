@@ -64,10 +64,10 @@ const Timeline2 = ({ timeline, moveCharacterToTimeline, assignments }) => {
               cardHeight={150}
               hideControls={true}
               theme={{
-                primary: "#2564ec",
+                primary: "#2564EC",
                 cardBgColor: "white",
-                cardForeColor: "black",
-                titleColor: "black",
+                cardForeColor: "white",
+                titleColor: "#2564EC",
               }}
               enableBreakPoint
               showAllCardsHorizontal={false}
@@ -80,7 +80,7 @@ const Timeline2 = ({ timeline, moveCharacterToTimeline, assignments }) => {
                   {assignments[timeline[index].page]?.map((char) => (
                     <span
                       key={char.name}
-                      className="px-2 py-1 bg-blue-600 text-white rounded-full text-sm mr-2"
+                      className="px-2 py-1 bg-blue-700 text-white rounded-full text-sm mr-2"
                     >
                       {char.name}
                     </span>
