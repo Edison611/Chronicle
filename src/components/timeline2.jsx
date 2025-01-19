@@ -26,7 +26,7 @@ const Timeline2 = ({ timeline, moveCharacterToTimeline, assignments }) => {
         if (event) {
           moveCharacterToTimeline(item.character, event.page);
           navigate(
-            `/character-perspective/${item.character.name}/${event.page}`
+            `/character-perspective/${item.character}/${event.page}`
           );
         }
       },

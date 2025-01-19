@@ -1,0 +1,407 @@
+@import url('https://fonts.cdnfonts.com/css/exo-4');
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blurry-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0093E9;
+  background: linear-gradient(-45deg, #0093E9, #80D0C7, rgb(16, 86, 130));
+  background-size: 400% 400%;
+  /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 75%);   */
+  /* background-image: linear-gradient(160deg, red 0%, blue 75%); */
+  animation: gradience 8s ease infinite;
+}
+
+@keyframes gradience {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1%;
+  opacity: 80%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 6rem;
+  margin-top: 0;
+  margin-bottom: 5%;
+  font-family: 'Exo', sans-serif;
+  font-weight: normal;
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid darkblue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em; Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: darkblue; }
+  }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 355px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+    --d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.form-container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-div {
+  margin-top: 20px;  
+  width: 200px;
+  height: 50px;
+  border-radius: 3%;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  animation: initialise forwards 3s, flicker 1s alternate-reverse infinite;
+  animation-delay: 1s;
+}
+
+.input-div-upload {
+    margin-top: 20px;  
+    width: 200px;
+    height: 50px;
+    border-radius: 3%;
+    border: 2px solid rgb(0, 0, 139);
+    font-weight: normal;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    animation: upload forwards 1s, uploadFlicker forwards infinite 3s;
+}
+
+.icon-upload {
+    color: rgb(0, 0, 139);
+    opacity: 0%;
+    font-size: 2rem;
+    cursor: pointer;
+    animation: iconflicker 4s linear infinite;
+    animation-delay: 1s;
+  }
+
+  .icon-upload-hover {
+    color: white;
+    opacity: 0%;
+    font-size: 2rem;
+    cursor: pointer;
+    animation: iconflicker 4s linear infinite;
+    animation-delay: 1s;
+  }
+
+@keyframes upload {
+    0% {
+      padding: 0px;
+      background-color: transparent;
+      font-size: 20px;
+    }
+
+    25% {
+      padding: 100px;
+      background-color: rgb(0, 0, 139);
+      font-size: 40px;
+    }
+
+    100% {
+        padding: 0px;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}
+
+@keyframes uploadFlicker {
+    0% {
+      opacity: 1;
+    }
+  
+    5% {
+      opacity: 0.2;
+      background-color: rgb(0, 0, 139);
+      color: white;
+    }
+  
+    10% {
+      opacity: 1;
+      background-color: transparent;
+      color: black;
+    }
+  
+    15% {
+      opacity: 0.2;
+      background-color: rgb(0, 0, 139);
+      color: white;
+    }
+  
+    20% {
+      opacity: 1;
+      background-color: transparent;
+      color: black;
+    }
+  
+    100% {
+      opacity: 1;
+      background-color: transparent;
+      color: black;
+    }
+  }
+
+@keyframes iconflicker {
+    0% {
+      opacity: 1;
+    }
+  
+    5% {
+      opacity: 0.2;
+    }
+  
+    10% {
+      opacity: 1;
+    }
+  
+    15% {
+      opacity: 0.2;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.input {
+  box-sizing: border-box;
+  position: absolute;
+  opacity: 0;
+  width: 200px;
+  height: 75px;
+  margin-bottom: 20px;
+  cursor: pointer !important;
+}
+
+@keyframes initialise {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes flicker {
+  /* 0% {
+    border: 2px solid rgb(4, 4, 202);
+    box-shadow: 0px 0px 100px rgb(4, 4, 202) , inset 0px 0px 10px rgb(4, 4, 202),0px 0px 5px rgb(255, 255, 255);
+  }
+/* 
+  5% {
+    border: none;
+    box-shadow: none;
+  } */
+
+  /* 10% {
+    border: 2px solid rgb(4, 4, 202);
+    box-shadow: 0px 0px 100px rgb(4, 4, 202) , inset 0px 0px 10px rgb(4, 4, 202),0px 0px 5px rgb(255, 255, 255);
+  }
+
+  25% {
+    border: none;
+    box-shadow: none;
+  }
+
+  30% {
+    border: 2px solid rgb(4, 4, 202);
+    box-shadow: 0px 0px 100px rgb(4, 4, 202) , inset 0px 0px 10px rgb(4, 4, 202),0px 0px 5px rgb(255, 255, 255);
+  }
+
+  25% {
+    border: 2px solid rgb(4, 4, 202);
+    box-shadow: 0px 0px 100px rgb(4, 4, 202) , inset 0px 0px 10px rgb(4, 4, 202),0px 0px 5px rgb(255, 255, 255);
+  }
+
+  100% {
+    border: 2px solid rgb(4, 4, 202);
+    box-shadow: 0px 0px 100px rgb(4, 4, 202) , inset 0px 0px 10px rgb(4, 4, 202),0px 0px 5px rgb(255, 255, 255);
+  } */
+
+    from {
+        border: 2px solid rgb(0, 0, 139);
+        box-shadow: 0px 0px 10px rgb(0, 0, 139) , inset 0px 0px 10px rgb(0, 0, 139),0px 0px 5px rgb(255, 255, 255);
+        transform: translateY(0px);
+    }
+
+    to {
+        border: 2px solid rgb(0, 0, 139);
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes iconflicker {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0.2;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.input-div:hover, .input-div-upload:hover, .icon-upload:hover {
+    background-color: rgb(0, 0, 139);
+    color: white;
+}
+
+
+.button-submit {
+  --font-color: #fefefe;
+  --bg-color: #111;
+  --main-color: #fefefe;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.button-submit:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.dropdown-container {
+  margin: 20px;
+}
+
+.dropdown {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #333;
+}
+
+.dropdown option {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Style for when dropdown is open */
+.dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

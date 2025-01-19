@@ -3,13 +3,18 @@ import { useDrag, useDrop, DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { useNavigate } from "react-router-dom";
 import Timeline2 from "./timeline2";
+import './input.css';
 
 export default function Input() {
+  const [file, setFile] = useState();
+  const [fileContent, setFileContent] = useState([]);
+
   const [story, setStory] = useState("");
   const [characters, setCharacters] = useState([]);
   const [timeline, setTimeline] = useState([]);
   const [assignments, setAssignments] = useState({});
   const [isDragging, setIsDragging] = useState(false);
+  const [data, setData] = useState(null);
 
   const sampleData = {
     timeline: [
@@ -24,8 +29,10 @@ export default function Input() {
 
   useEffect(() => {
     setTimeline(sampleData.timeline);
-    setCharacters(sampleData.characters);
-  }, []);
+    if (data) {
+      setCharacters(data.characters);
+    }
+  }, [data]);
 
   const moveCharacterToTimeline = (character, eventPage) => {
     setAssignments((prevAssignments) => ({
@@ -55,32 +62,36 @@ export default function Input() {
     e.preventDefault();
     e.stopPropagation();
     setIsDragging(false);
+  })
 
-    const files = Array.from(e.dataTransfer.files);
-    const pdfFile = files.find((file) => file.type === "application/pdf");
-
-    if (pdfFile) {
-      try {
-        const text = await pdfFile.text();
-        setStory(text);
-      } catch (error) {
-        console.error("Error reading PDF:", error);
+    const handleChange = async (e) => {
+      const file = e.target.files?.[0];
+      if (file && file.type === "application/pdf") {
+        try {
+          const formData = new FormData();
+          formData.append('file', file);
+  
+          const response = await fetch('http://localhost:5001/api/upload', {
+            method: 'POST',
+            body: formData,
+          });
+  
+          if (response.ok) {
+            const result = await response.json();
+            setData(result); // Update the state with the result
+            console.log('File uploaded successfully:', result);
+          } else {
+            console.error('Failed to upload file:', response.statusText);
+          }
+        } catch (error) {
+          console.error('Error uploading PDF:', error);
+        }
+      } else {
+        console.error('Please select a valid PDF file.');
       }
-    }
-  }, []);
+    };
 
-  const handleFileInput = async (e) => {
-    const file = e.target.files?.[0];
-    if (file && file.type === "application/pdf") {
-      try {
-        const text = await file.text();
-        setStory(text);
-      } catch (error) {
-        console.error("Error reading PDF:", error);
-      }
-    }
-  };
-
+  console.log(data)
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-200 via-blue-300 to-indigo-400 p-10">
       <div className="w-full flex flex-col space-y-8">
@@ -108,6 +119,7 @@ export default function Input() {
                     onDragOver={handleDragOver}
                     onDrop={handleDrop}
                   />
+
                   {isDragging && (
                     <div className="absolute inset-0 bg-blue-50 bg-opacity-75 flex items-center justify-center rounded-xl border-2 border-dashed border-blue-400">
                       <p className="text-blue-500 font-semibold">
@@ -117,19 +129,13 @@ export default function Input() {
                   )}
                 </div>
                 <div className="flex justify-between items-center">
-                  <label
-                    htmlFor="pdf-upload"
-                    className="text-sm text-blue-600 hover:text-blue-800 underline cursor-pointer"
-                  >
-                    Upload PDF
-                  </label>
-                  <input
-                    type="file"
-                    accept=".pdf"
-                    onChange={handleFileInput}
-                    id="pdf-upload"
-                    className="hidden"
-                  />
+                    <form className="form-container">
+                    <div className={file ? "input-div-upload" : "input-div"}>
+                    <input className="input" name="file" type="file" accept="application/pdf" onChange={handleChange}></input>
+                        {!file && <svg className={"icon-upload"} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor"><polyline points="16 16 12 12 8 16"></polyline><line y2="21" x2="12" y1="12" x1="12"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>}
+                        {file && <p className="file-selected">{file.name}</p>}
+                    </div>
+                </form>   
                   <button
                     type="submit"
                     className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition"
@@ -149,7 +155,7 @@ export default function Input() {
                 <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white">
                   <div className="space-y-4 p-4">
                     {characters.map((char) => (
-                      <DraggableCharacter key={char.name} character={char} />
+                      <DraggableCharacter key={char} character={char} />
                     ))}
                   </div>
                 </div>
@@ -195,8 +201,8 @@ const DraggableCharacter = ({ character }) => {
         isDragging ? "opacity-50 scale-95" : "hover:scale-105"
       }`}
     >
-      <h3 className="text-lg font-bold text-blue-700">{character.name}</h3>
-      <p className="text-sm text-gray-600">{character.description}</p>
+      <h3 className="text-lg font-bold text-blue-700">{character}</h3>
+      {/* <p className="text-sm text-gray-600">{character.description}</p> */}
     </div>
   );
 };
