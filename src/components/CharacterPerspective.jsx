@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const CharacterPerspective = () => {
-  const { characterName, eventPage } = useParams();
+  const { storyName, characterName, eventPage } = useParams();
+
   const [perspective, setPerspective] = useState("");
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
@@ -12,8 +13,8 @@ const CharacterPerspective = () => {
   useEffect(() => {
     const fetchPerspective = async () => {
       try {
-        let format = {"prompt": "Tell me about your perspective of the story right now", "character": characterName, "page": eventPage, "story": "Romeo and Juliet"}
-        const response = await fetch(`http://localhost:5001/api/chat/`, {
+        let format = {"prompt": "Tell me about your perspective of the story right now", "character": characterName, "page": eventPage, "story": storyName}
+        const response = await fetch(`http://localhost:5001/api/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -22,6 +23,7 @@ const CharacterPerspective = () => {
         });
         if (response.ok) {
           const result = await response.json();
+          console.log(result)
           setPerspective(result.response); // Update the state with the result
           setLoading(false);
         } else {
@@ -39,7 +41,7 @@ const CharacterPerspective = () => {
 
   const handleSendMessage = async (e) => {
       try {
-        let format = {"prompt": userInput, "character": characterName, "page": eventPage, "story": "Romeo and Juliet"};
+        let format = {"prompt": userInput, "character": characterName, "page": eventPage, "story": storyName};
         console.log(format)
         const response = await fetch('http://localhost:5001/api/chat', {
           method: 'POST',
@@ -61,7 +63,8 @@ const CharacterPerspective = () => {
         console.error('Error uploading PDF:', error);
       }
     } 
-    console.log(messages)
+    // console.log(messages)
+  console.log(perspective)
 
   if (loading) {
     return (
