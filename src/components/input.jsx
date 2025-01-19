@@ -111,7 +111,7 @@ export default function Input() {
                     <section className="w-1/2 flex flex-col gap-8">
                         {/* Story Input */}
                         <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-none transition-all">
-                            <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4">
+                            <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
                                 Choose Story
                             </h2>
                             <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white">
@@ -169,7 +169,7 @@ export default function Input() {
                         {/* Character List */}
                         <DndProvider backend={HTML5Backend}>
                             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-none transition-all">
-                                <h2 className="text-lg font-semibold text-gray-700 mb-4">
+                                <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
                                     Characters
                                 </h2>
                                 <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white">
@@ -195,8 +195,8 @@ export default function Input() {
                     {/* Timeline */}
                     <section className="w-1/2">
                         <DndProvider backend={HTML5Backend}>
-                            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-none transition-all h-[100%]">
-                                <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4">
+                            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-none transition-all h-[745px] overflow-y-scroll">
+                                <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
                                     Timeline
                                 </h2>
                                 <div className="relative">
@@ -211,7 +211,7 @@ export default function Input() {
                                             assignments={assignments}
                                             story={story}
                                         />
-                                    ))}{" "}
+                                    ))}
                                     <div className="absolute left-2.5 -bottom-2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-blue-500"></div>
                                 </div>
                             </div>

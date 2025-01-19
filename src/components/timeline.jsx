@@ -44,6 +44,7 @@ const Timeline = ({ event, moveCharacterToTimeline, assignments,story }) => {
 
             {/* Event content */}
             <div className="pl-6">
+                {/* Add padding to align content with the line */}
                 <h3 className="font-bold ml-10">Section {event.chunk_num}</h3>
                 <p>{event.description}</p>
                 <div className="mt-2">
