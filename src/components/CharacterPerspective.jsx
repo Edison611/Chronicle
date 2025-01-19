@@ -7,6 +7,8 @@ const CharacterPerspective = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchPerspective = async () => {
       try {
@@ -21,11 +23,14 @@ const CharacterPerspective = () => {
         if (response.ok) {
           const result = await response.json();
           setPerspective(result.response); // Update the state with the result
+          setLoading(false);
         } else {
           console.error('Failed to fetch character:', response.statusText);
+          setLoading(false);
         }
       } catch (error) {
         console.error('Error fetching character:', error);
+        setLoading(false);
       }
     };
     fetchPerspective();
@@ -58,7 +63,7 @@ const CharacterPerspective = () => {
     } 
     console.log(messages)
 
-  if (!character || !event) {
+  if (loading) {
     return (
       <div className="h-screen flex items-center justify-center bg-gradient-to-tr from-blue-50 to-blue-100">
         <p className="text-lg text-gray-500 animate-pulse">Loading...</p>
