@@ -33,71 +33,83 @@ const CharacterPerspective = () => {
   const handleSendMessage = () => {
     if (userInput.trim() !== "") {
       setMessages([...messages, { sender: "user", text: userInput }]);
-      // Call API to get response from the character
       setUserInput("");
     }
   };
 
   if (!character || !event) {
-    return <p>Loading...</p>;
+    return (
+      <div className="h-screen flex items-center justify-center bg-gradient-to-tr from-blue-50 to-blue-100">
+        <p className="text-lg text-gray-500 animate-pulse">Loading...</p>
+      </div>
+    );
   }
 
   return (
-    <div className="p-8 space-y-8">
-      <h1 className="text-3xl font-bold text-center">
-        {character.name}'s Perspective
-      </h1>
+    <div className="min-h-screen bg-gradient-to-tr from-blue-200 via-blue-300 to-indigo-400 p-8">
+      <div className="max-w-5xl mx-auto space-y-12">
+        {/* Header */}
+        <h1 className="text-5xl font-extrabold text-center text-white drop-shadow-md">
+          {character.name}'s Perspective
+        </h1>
 
-      {/* Perspective Section */}
-      <div className="p-6 bg-white shadow-lg rounded-lg space-y-4">
-        <h2 className="text-2xl font-semibold">{event.title}</h2>
-        <p className="text-gray-700">{event.description}</p>
-        <p className="text-gray-700">{character.description}</p>
-        <p className="text-gray-700 italic">
-          "{character.name}'s perspective at this time: Their unique internal
-          thoughts about the event."
-        </p>
-      </div>
-
-      {/* Chat Section */}
-      <div className="p-6 bg-white shadow-lg rounded-lg space-y-4">
-        <h2 className="text-xl font-semibold">Chat with {character.name}</h2>
-        <div className="h-64 overflow-y-scroll bg-gray-100 p-4 rounded-lg space-y-4">
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`${
-                message.sender === "user" ? "text-right" : "text-left"
-              }`}
-            >
-              <span
-                className={`inline-block p-3 rounded-lg ${
-                  message.sender === "user"
-                    ? "bg-blue-100 text-amber-900"
-                    : "bg-gray-200 text-gray-700"
-                }`}
-              >
-                {message.text}
-              </span>
-            </div>
-          ))}
+        {/* Perspective Section */}
+        <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:scale-105">
+          <h2 className="text-4xl font-semibold text-blue-600">
+            {event.title}
+          </h2>
+          <p className="text-lg mt-4 text-gray-700 leading-relaxed">
+            {event.description}
+          </p>
+          <p className="text-lg mt-2 text-gray-700">{character.description}</p>
+          <p className="italic text-gray-600 mt-4">
+            "{character.name}'s unique thoughts on the event go here."
+          </p>
         </div>
 
-        {/* Input Section */}
-        <div className="flex space-x-4">
-          <input
-            type="text"
-            value={userInput}
-            onChange={(e) => setUserInput(e.target.value)}
-            placeholder="Type a message..."
-            className="flex-grow p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
-          />
-          <button
-            onClick={handleSendMessage}
-            className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition"
-          >
-            Send
-          </button>
+        {/* Chat Section */}
+        <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:scale-105">
+          <h2 className="text-3xl font-semibold text-blue-600">
+            Chat with {character.name}
+          </h2>
+          {/* Messages */}
+          <div className="h-64 overflow-y-scroll bg-gradient-to-br from-blue-50 to-blue-200 p-6 rounded-xl space-y-4 mt-6">
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={`flex ${
+                  message.sender === "user" ? "justify-end" : "justify-start"
+                }`}
+              >
+                <div
+                  className={`px-5 py-3 rounded-full text-sm font-medium shadow-lg ${
+                    message.sender === "user"
+                      ? "bg-gradient-to-r from-blue-500 to-indigo-500 text-white"
+                      : "bg-blue-100 text-gray-900"
+                  }`}
+                >
+                  {message.text}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Input Section */}
+          <div className="flex items-center mt-6 space-x-4">
+            <input
+              type="text"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              placeholder="Type a message..."
+              className="flex-grow px-6 py-4 text-lg border-0 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+            <button
+              onClick={handleSendMessage}
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-lg rounded-full shadow-lg hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition"
+            >
+              Send
+            </button>
+          </div>
         </div>
       </div>
     </div>
