@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Input />} />
-        <Route path="/character-perspective/:characterName/:eventPage" element={<CharacterPerspective />} />
+        <Route path="/character-perspective/:storyName/:characterName/:eventPage" element={<CharacterPerspective />} />
       </Routes>
     </Router>
   );

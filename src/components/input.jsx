@@ -42,6 +42,7 @@ export default function Input() {
     };
 
     const chooseStory = async (index) => {
+        setStory(stories[index]);
         try {
             const response = await fetch(
                 `http://localhost:6969/api/getstory?index=${index}`
@@ -208,6 +209,7 @@ export default function Input() {
                                                 moveCharacterToTimeline
                                             }
                                             assignments={assignments}
+                                            story={story}
                                         />
                                     ))}
                                     <div className="absolute left-2.5 -bottom-2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-blue-500"></div>

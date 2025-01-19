@@ -2,33 +2,35 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useDrop } from "react-dnd";
 
-const Timeline = ({ event, moveCharacterToTimeline, assignments }) => {
+const Timeline = ({ event, moveCharacterToTimeline, assignments,story }) => {
     const navigate = useNavigate();
+
+    // useDrop hook for drag-and-drop functionality
     const [{ isOver }, drop] = useDrop(() => ({
-        accept: "CHARACTER",
+        accept: "CHARACTER", // Must match the type used in the draggable component
         drop: (item) => {
-            moveCharacterToTimeline(item.character, event.page);
+            // Call the moveCharacterToTimeline function with the character and chunk_num
+            moveCharacterToTimeline(item.character, event.chunk_num);
         },
         collect: (monitor) => ({
-            isOver: monitor.isOver(),
+            isOver: monitor.isOver(), // Track whether an item is being dragged over this component
         }),
     }));
 
+    // Handle click event to navigate to character perspective
     const handleClick = (event) => {
-        if (!assignments[event.page]) {
+        if (!assignments[event.chunk_num]) {
             return;
         } else {
             navigate(
-                `/character-perspective/${assignments[event.page][0].name}/${
-                    event.page
-                }`
+                `/character-perspective/${story}/${assignments[event.chunk_num][0].name}/${event.chunk_num}`
             );
         }
     };
 
     return (
         <div
-            ref={drop}
+            ref={drop} // Attach the drop ref to this element
             className={`relative p-4 bg-gray-100 rounded-lg shadow-md ${
                 isOver ? "bg-gray-300" : "bg-gray-100"
             }`}
