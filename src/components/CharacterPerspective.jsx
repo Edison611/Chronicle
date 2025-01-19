@@ -3,32 +3,34 @@ import { useParams } from "react-router-dom";
 
 const CharacterPerspective = () => {
   const { characterName, eventPage } = useParams();
-  const [character, setCharacter] = useState(null);
-  const [event, setEvent] = useState(null);
+  const [perspective, setPerspective] = useState("");
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
 
-  const sampleData = {
-    timeline: [
-      { page: 1, title: "Event 1", description: "This is the first event." },
-      { page: 2, title: "Event 2", description: "This is the second event." },
-    ],
-    characters: [
-      { name: "Person1", description: "He did this" },
-      { name: "Person2", description: "She did this" },
-    ],
-  };
-
   useEffect(() => {
-    const selectedCharacter = sampleData.characters.find(
-      (char) => char.name === characterName
-    );
-    const selectedEvent = sampleData.timeline.find(
-      (event) => event.page === parseInt(eventPage)
-    );
-    setCharacter(selectedCharacter);
-    setEvent(selectedEvent);
-  }, [characterName, eventPage]);
+    const fetchPerspective = async () => {
+      try {
+        let format = {"prompt": "Tell me about your perspective of the story right now", "character": characterName, "page": eventPage, "story": "Romeo and Juliet"}
+        const response = await fetch(`http://localhost:5001/api/chat/`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(format),
+        });
+        if (response.ok) {
+          const result = await response.json();
+          setPerspective(result.response); // Update the state with the result
+        } else {
+          console.error('Failed to fetch character:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error fetching character:', error);
+      }
+    };
+    fetchPerspective();
+
+  }, []);
 
   const handleSendMessage = async (e) => {
       try {
@@ -56,13 +58,13 @@ const CharacterPerspective = () => {
     } 
     console.log(messages)
 
-  // if (!character || !event) {
-  //   return (
-  //     <div className="h-screen flex items-center justify-center bg-gradient-to-tr from-blue-50 to-blue-100">
-  //       <p className="text-lg text-gray-500 animate-pulse">Loading...</p>
-  //     </div>
-  //   );
-  // }
+  if (!character || !event) {
+    return (
+      <div className="h-screen flex items-center justify-center bg-gradient-to-tr from-blue-50 to-blue-100">
+        <p className="text-lg text-gray-500 animate-pulse">Loading...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-tr from-blue-200 via-blue-300 to-indigo-400 p-8">
@@ -78,7 +80,7 @@ const CharacterPerspective = () => {
             {/* {event.title} */}
           </h2>
           <p className="text-lg mt-4 text-gray-700 leading-relaxed">
-            {/* {event.description} */}
+            {perspective}
           </p>
           <p className="italic text-gray-600 mt-4">
           </p>
