@@ -159,9 +159,10 @@ export default function Input() {
 
           {/* Timeline */}
           <section className="w-1/2">
-            <h2 className="text-lg font-semibold text-gray-700 mb-4">
+            <h2 className="text-lg font-semibold text-white drop-shadow-md mb-4">
               Timeline
             </h2>
+
             <DndProvider backend={HTML5Backend}>
               <div className="bg-white p-8 rounded-2xl shadow-2xl hover:scale-105 transition-all">
                 <Timeline2
