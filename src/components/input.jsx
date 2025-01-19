@@ -7,66 +7,61 @@ import DraggableCharacter from "./draggableCharacter";
 import "./input.css";
 
 export default function Input() {
-    const [file, setFile] = useState();
-    const [fileContent, setFileContent] = useState([]);
-
     const [story, setStory] = useState("");
+    const [stories, setStories] = useState([]);
     const [characters, setCharacters] = useState([]);
     const [timeline, setTimeline] = useState([]);
     const [assignments, setAssignments] = useState({});
-    const [isDragging, setIsDragging] = useState(false);
     const [data, setData] = useState(null);
 
-    const sampleData = {
-        timeline: [
-            { page: 1, title: "Event 1", important: true },
-            { page: 2, title: "Event 2", important: false },
-            { page: 3, title: "Event 1", important: true },
-            { page: 4, title: "Event 2", important: false },
-            { page: 5, title: "Event 1", important: true },
-            { page: 6, title: "Event 2", important: false },
-            { page: 7, title: "Event 1", important: true },
-            { page: 8, title: "Event 2", important: false },
-        ],
-        characters: [
-            { name: "Person1", description: "He did this" },
-            { name: "Person2", description: "She did this" },
-        ],
-    };
+    useEffect(() => {
+        if (data) {
+            setCharacters(data.characters);
+        }
+        if (data) {
+            setTimeline(data.contexts);
+        }
+    }, [data]);
 
     useEffect(() => {
-        setTimeline(sampleData.timeline);
-        setCharacters(sampleData.characters);
-    }, [data]);
+        getStories();
+    }, []);
+
+    const getStories = async () => {
+        try {
+            const response = await fetch("http://localhost:5001/api/stories");
+            if (response.ok) {
+                const data = await response.json();
+                setStories(data.stories);
+            } else {
+                console.error("Failed to fetch stories:", response.statusText);
+            }
+        } catch (error) {
+            console.error("Error fetching stories:", error);
+        }
+    };
+
+    const chooseStory = async (index) => {
+        try {
+            const response = await fetch(
+                `http://localhost:5001/api/getstory?index=${index}`
+            );
+            if (response.ok) {
+                const data = await response.json();
+                setData(data);
+            } else {
+                console.error("Failed to fetch story:", response.statusText);
+            }
+        } catch (error) {
+            console.error("Error fetching story:", error);
+        }
+    };
 
     const moveCharacterToTimeline = (character, eventPage) => {
         setAssignments((prevAssignments) => ({
             [eventPage]: [...(prevAssignments[eventPage] || []), character],
         }));
     };
-
-    const handleDragEnter = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsDragging(true);
-    };
-
-    const handleDragLeave = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsDragging(false);
-    };
-
-    const handleDragOver = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-    };
-
-    const handleDrop = useCallback(async (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsDragging(false);
-    });
 
     const handleChange = async (e) => {
         const file = e.target.files?.[0];
@@ -101,7 +96,6 @@ export default function Input() {
         }
     };
 
-    console.log(data);
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-200 via-blue-300 to-indigo-400 p-10">
             <div className="w-full flex flex-col space-y-8">
@@ -119,55 +113,56 @@ export default function Input() {
                             <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4">
                                 Choose Story
                             </h2>
-                            <form
-                                onSubmit={(e) => e.preventDefault()}
-                                className="space-y-4"
-                            >
-                                <div>
-                                    <textarea
-                                        value={story}
-                                        onChange={(e) =>
-                                            setStory(e.target.value)
-                                        }
-                                        placeholder="Enter your story here or drop a PDF file..."
-                                        rows="7"
-                                        className="w-full p-4 border border-gray-300 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400 min-h-[200px] max-h-[400px]"
-                                        onDragEnter={handleDragEnter}
-                                        onDragLeave={handleDragLeave}
-                                        onDragOver={handleDragOver}
-                                        onDrop={handleDrop}
-                                    />
+                            <div className="h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-inner bg-white">
+                                <div className="space-y-4 p-4 flex flex-col">
+                                    {stories.length === 0 ? (
+                                        <div className="text-gray-500 text-center py-4">
+                                            Nothing to show here
+                                        </div>
+                                    ) : (
+                                        stories.map((story, index) => (
+                                            <button
+                                                key={index}
+                                                onClick={() =>
+                                                    chooseStory(index)
+                                                }
+                                                className="w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 hover:text-blue-600"
+                                            >
+                                                {story}.pdf
+                                            </button>
+                                        ))
+                                    )}
                                 </div>
-                                <div className="flex justify-between items-center">
-                                    <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
-                                        <input
-                                            className="input"
-                                            name="file"
-                                            type="file"
-                                            accept="application/pdf"
-                                            onChange={handleChange}
-                                        ></input>
-                                        <span class="material-symbols-outlined">
-                                            cloud_upload
-                                        </span>
-                                        Upload
-                                    </button>
+                            </div>
+                            <div className="flex justify-between items-center pt-4">
+                                <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                    <input
+                                        className="input"
+                                        name="file"
+                                        type="file"
+                                        accept="application/pdf"
+                                        onChange={handleChange}
+                                    ></input>
+                                    <span className="material-symbols-outlined">
+                                        cloud_upload
+                                    </span>
+                                    Upload
+                                </button>
 
-                                    <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
-                                        <span class="material-symbols-outlined">
-                                            check
-                                        </span>
-                                        Load
-                                    </button>
+                                <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                    <span className="material-symbols-outlined">
+                                        check
+                                    </span>
+                                    Load
+                                </button>
 
-                                    <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                        Delete
-                                    </button>
-                                </div>
-                            </form>
+                                <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                    <span className="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                    Delete
+                                </button>
+                            </div>
                         </div>
 
                         {/* Character List */}
@@ -190,7 +185,7 @@ export default function Input() {
                                                 />
                                             ))
                                         )}
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </DndProvider>
@@ -207,7 +202,7 @@ export default function Input() {
                                     <div className="absolute left-2.5 -top-2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-blue-500"></div>
                                     {timeline.map((event) => (
                                         <Timeline
-                                            key={event.page}
+                                            key={event.chunk_num}
                                             event={event}
                                             moveCharacterToTimeline={
                                                 moveCharacterToTimeline
