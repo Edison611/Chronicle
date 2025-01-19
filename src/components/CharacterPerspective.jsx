@@ -97,7 +97,7 @@ const CharacterPerspective = () => {
                 </h1>
 
                 {/* Perspective Section */}
-                <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:shadow-none">
+                <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-inner transition-all transform hover:shadow-none">
                     <h2 className="text-4xl font-semibold text-blue-600">
                         {/* {event.title} */}
                     </h2>
@@ -108,7 +108,7 @@ const CharacterPerspective = () => {
                 </div>
 
                 {/* Chat Section */}
-                <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:shadow-none">
+                <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-inner transition-all transform hover:shadow-none">
                     <h2 className="text-3xl font-semibold text-blue-600">
                         Chat with {characterName}
                     </h2>
@@ -123,6 +123,11 @@ const CharacterPerspective = () => {
                             type="text"
                             value={userInput}
                             onChange={(e) => setUserInput(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter") {
+                                    handleSendMessage();
+                                }
+                            }}
                             placeholder="Type a message..."
                             className="flex-grow px-6 py-4 text-lg border-0 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
                         />

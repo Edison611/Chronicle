@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
-import { useNavigate } from "react-router-dom";
 import Timeline from "./timeline";
 import DraggableCharacter from "./draggableCharacter";
 import "./input.css";
 
 export default function Input() {
     const [story, setStory] = useState("");
+    const [storyIndex, setStoryIndex] = useState(0);
     const [stories, setStories] = useState([]);
     const [characters, setCharacters] = useState([]);
     const [timeline, setTimeline] = useState([]);
@@ -41,15 +41,41 @@ export default function Input() {
         }
     };
 
-    const chooseStory = async (index) => {
+    const chooseStory = (index) => {
         setStory(stories[index]);
+        setStoryIndex(index);
+    };
+
+    const loadStory = async () => {
         try {
             const response = await fetch(
-                `http://localhost:5001/api/getstory?index=${index}`
+                `http://localhost:5001/api/getstory?index=${storyIndex}`
             );
             if (response.ok) {
                 const data = await response.json();
                 setData(data);
+            } else {
+                console.error("Failed to fetch story:", response.statusText);
+            }
+        } catch (error) {
+            console.error("Error fetching story:", error);
+        }
+    };
+
+    const deleteStory = async () => {
+        try {
+            const response = await fetch(
+                `http://localhost:5001/api/delete?index=${storyIndex}`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ index: storyIndex }),
+                }
+            );
+            if (response.ok) {
+                getStories();
             } else {
                 console.error("Failed to fetch story:", response.statusText);
             }
@@ -127,7 +153,11 @@ export default function Input() {
                                                 onClick={() =>
                                                     chooseStory(index)
                                                 }
-                                                className="w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 hover:text-blue-600"
+                                                className={`w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 hover:text-blue-600${
+                                                    storyIndex == index
+                                                        ? " bg-blue-50 ring-blue-300"
+                                                        : ""
+                                                }`}
                                             >
                                                 {story}.pdf
                                             </button>
@@ -150,14 +180,20 @@ export default function Input() {
                                     Upload
                                 </button>
 
-                                <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                <button
+                                    className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition"
+                                    onClick={loadStory}
+                                >
                                     <span className="material-symbols-outlined">
                                         check
                                     </span>
                                     Load
                                 </button>
 
-                                <button className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition">
+                                <button
+                                    className="flex justify-evenly w-[30%] px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md hover:opacity-90 focus:ring-2 focus:ring-blue-400 transition"
+                                    onClick={deleteStory}
+                                >
                                     <span className="material-symbols-outlined">
                                         delete
                                     </span>
