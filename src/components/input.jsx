@@ -106,9 +106,9 @@ export default function Input() {
                 </h1>
 
                 {/* Main Content - Story, Characters, and Timeline */}
-                <div className="flex gap-8 w-full">
+                <div className="flex gap-8 w-full justify-center">
                     {/* Left Column - Story Input and Character List */}
-                    <section className="w-1/2 flex flex-col gap-8">
+                    <section className="w-[45%] flex flex-col gap-8">
                         {/* Story Input */}
                         <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-none transition-all">
                             <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
@@ -193,7 +193,7 @@ export default function Input() {
                     </section>
 
                     {/* Timeline */}
-                    <section className="w-1/2">
+                    <section className="w-[45%]">
                         <DndProvider backend={HTML5Backend}>
                             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-none transition-all h-[745px] overflow-y-auto no-scrollbar">
                                 <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4 sticky top-0 z-[1] bg-gray-50 rounded-lg p-2.5 -translate-x-2.5 -translate-y-2.5">
