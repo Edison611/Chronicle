@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useDrag, useDrop, DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { useNavigate } from "react-router-dom";
-import Timeline2 from "./timeline2";
+import Timeline from "./timeline";
+import DraggableCharacter from "./draggableCharacter";
 import "./input.css";
 
 export default function Input() {
@@ -18,16 +19,14 @@ export default function Input() {
 
     const sampleData = {
         timeline: [
-            {
-                page: 1,
-                title: "Event 1",
-                description: "This is the first event.",
-            },
-            {
-                page: 2,
-                title: "Event 2",
-                description: "This is the second event.",
-            },
+          { page: 1, title: "Event 1", important: true},
+          { page: 2, title: "Event 2", important: false},
+          { page: 3, title: "Event 1", important: true},
+          { page: 4, title: "Event 2", important: false},
+          { page: 5, title: "Event 1", important: true},
+          { page: 6, title: "Event 2", important: false},
+          { page: 7, title: "Event 1", important: true},
+          { page: 8, title: "Event 2", important: false},
         ],
         characters: [
             { name: "Person1", description: "He did this" },
@@ -37,14 +36,11 @@ export default function Input() {
 
     useEffect(() => {
         setTimeline(sampleData.timeline);
-        if (data) {
-            setCharacters(data.characters);
-        }
+        setCharacters(sampleData.characters);
     }, [data]);
 
     const moveCharacterToTimeline = (character, eventPage) => {
         setAssignments((prevAssignments) => ({
-            ...prevAssignments,
             [eventPage]: [...(prevAssignments[eventPage] || []), character],
         }));
     };
@@ -235,13 +231,22 @@ export default function Input() {
                                 <h2 className="text-lg font-semibold text-black drop-shadow-md mb-4">
                                     Timeline
                                 </h2>
-                                <Timeline2
-                                    timeline={timeline}
-                                    moveCharacterToTimeline={
-                                        moveCharacterToTimeline
-                                    }
+                                <div className="relative">
+                                      <div
+                                    className="absolute left-2.5 -top-2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-blue-500"
+                                  ></div>
+                                        {timeline.map((event) => (
+                                  <Timeline
+                                    key={event.page}
+                                    event={event}
+                                    moveCharacterToTimeline={moveCharacterToTimeline}
                                     assignments={assignments}
-                                />
+                                  />
+                                
+                        ))} <div
+                        className="absolute left-2.5 -bottom-2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-blue-500"
+                      ></div>
+                         </div>
                             </div>
                         </DndProvider>
                     </section>
