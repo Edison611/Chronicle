@@ -29,7 +29,7 @@ export default function Input() {
 
     const getStories = async () => {
         try {
-            const response = await fetch("http://localhost:6969/api/stories");
+            const response = await fetch("http://localhost:5001/api/stories");
             if (response.ok) {
                 const data = await response.json();
                 setStories(data.stories);
@@ -45,7 +45,7 @@ export default function Input() {
         setStory(stories[index]);
         try {
             const response = await fetch(
-                `http://localhost:6969/api/getstory?index=${index}`
+                `http://localhost:5001/api/getstory?index=${index}`
             );
             if (response.ok) {
                 const data = await response.json();
@@ -72,7 +72,7 @@ export default function Input() {
                 formData.append("file", file);
 
                 const response = await fetch(
-                    "http://localhost:6969/api/upload",
+                    "http://localhost:5001/api/upload",
                     {
                         method: "POST",
                         body: formData,

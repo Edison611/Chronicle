@@ -97,7 +97,7 @@ const CharacterPerspective = () => {
                 </h1>
 
                 {/* Perspective Section */}
-                <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:scale-105">
+                <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:shadow-none">
                     <h2 className="text-4xl font-semibold text-blue-600">
                         {/* {event.title} */}
                     </h2>
@@ -108,7 +108,7 @@ const CharacterPerspective = () => {
                 </div>
 
                 {/* Chat Section */}
-                <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:scale-105">
+                <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-inner transition-all transform hover:shadow-none">
                     <h2 className="text-3xl font-semibold text-blue-600">
                         Chat with {characterName}
                     </h2>
