@@ -85,7 +85,7 @@ export default function Input() {
     <div className="min-h-screen bg-gradient-to-br from-blue-200 via-blue-300 to-indigo-400 p-10">
       <div className="w-full flex flex-col space-y-8">
         {/* Header */}
-        <h1 className="text-6xl font-extrabold text-center text-white drop-shadow-2xl tracking-tight relative inline-block px-6 py-3 rounded-full border-4 border-blue-600 bg-gradient-to-r from-blue-400 to-indigo-500">
+        <h1 className="text-6xl font-extrabold text-center text-white drop-shadow-lg tracking-tight">
           Chronicle
         </h1>
 
